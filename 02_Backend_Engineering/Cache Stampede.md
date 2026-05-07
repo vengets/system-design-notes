@@ -59,9 +59,12 @@ We need to know what's hot ahead of time.
 
 ## Trade-Offs
 
-| Approach | Pros | Cons |
-| -------- | ---- | ---- |
-|          |      |      |
+| Approach           | Pros                                                                                                                                        | Cons                                                                              |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| Cache locking      | Most widely used solution, easy to implement and effective for most cases.                                                                  | If rebuild is slow, 1000's of request going to timing out.                        |
+| Request Coalescing | CloudFlare uses it, logically reduces fetching for same request multiple times during its TTL, allowing other request to refresh its value. | If each request is unique, it still behaves like Cache Locking approach.          |
+| Refresh Randomly   | Gradually start updating the requests, when it is near expiry, more the number of request getting refreshed.                                | Still too many request at certain point of time, difficult to predict randomness. |
+| Background refresh | Efficient when worker knows what has will be asked next.                                                                                    | Impossible for a worker to know, what value gets called in cache in future.       |
 
 ## Related Notes
 
