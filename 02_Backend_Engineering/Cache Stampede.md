@@ -1,16 +1,15 @@
 ---
-created: <% tp.date.now("YYYY-MM-DD HH:mm") %>
-updated: <% tp.file.last_modified_date() %>
+created: 2026-05-08 04:26
+updated:
 tags:
   - backend
 status: active
 language:
 source:
 related:
-url:
 ---
 
-# <% tp.file.title %>
+# {{fileName}}
 
 > [!info]
 > Backend engineering concept or implementation pattern.
