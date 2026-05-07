@@ -13,12 +13,21 @@ status: active
 
 ---
 
+```dataview
 TASK
-FROM "01_System_Design" OR "02_Backend_Engineering" OR "03_Spring_Boot" OR "04_Databases" OR "05_Kafka" OR "06_AWS" OR "07_Kubernetes"
+FROM "01_System_Design" 
+OR "02_Backend_Engineering"
+OR "03_Spring_Boot"
+OR "04_Databases"
+OR "05_Kafka"
+OR "06_AWS"
+OR "07_Kubernetes"
 WHERE !completed
-SORT file.mtime DESC
-LIMIT 30
-
+SORT contains(text, "#todo/high") DESC,
+     contains(text, "#todo/medium") DESC,
+     contains(text, "#todo/low") DESC,
+     file.mtime DESC
+```
 ## ⚡ Command Center
 
 | Area | Open |

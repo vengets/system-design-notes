@@ -5,6 +5,10 @@
       "path": "00_Home/Home_Dashboard.md"
     },
     {
+      "basename": "Adapter Pattern",
+      "path": "01_System_Design/001_LLD/Adapter Pattern.md"
+    },
+    {
       "basename": "Cache Stampede",
       "path": "02_Backend_Engineering/Cache Stampede.md"
     },
@@ -63,10 +67,6 @@
     {
       "basename": "Daily Learning Log Template",
       "path": "90_Templates/Daily Learning Log Template.md"
-    },
-    {
-      "basename": "Adapter Pattern",
-      "path": "01_System_Design/001_LLD/Adapter Pattern.md"
     },
     {
       "basename": "Chain of Responsibility Pattern",
