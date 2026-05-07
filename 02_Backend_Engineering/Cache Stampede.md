@@ -17,7 +17,8 @@ url: https://www.youtube.com/shorts/MPFkGLZGe9M?feature=share
 > Backend engineering concept or implementation pattern.
 
 ## Purpose
-> When a huge number of items in cache gets timed out almost at same time, all tries to refresh it's value from DB at the same time, which consumes all the thread and blocks db from serving to user request. Sometimes it could lead to system crash.  
+
+Cache stampede happens when many requests observe the same cache key as expired or missing and all try to recompute it from the database at the same time. This can exhaust application threads, overload the database, increase latency, and sometimes trigger cascading failure.
 
 ## Internal Mechanics
 There are 4 ways to fix this cache stampede:
