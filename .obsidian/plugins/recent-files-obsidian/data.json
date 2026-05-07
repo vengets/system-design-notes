@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Caching",
+      "path": "Caching.md"
+    },
+    {
       "basename": "Cache Stampede",
       "path": "02_Backend_Engineering/Cache Stampede.md"
     },

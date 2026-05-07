@@ -73,6 +73,8 @@ We need to know what's hot ahead of time.
 
 ## Related Notes
 
-- [[ ]]
+-  [[Caching]]  
+- [[Cache Invalidation]]  
+- [[Redis]]
 
 ## Revision Notes
