@@ -20,52 +20,87 @@ url: https://www.youtube.com/shorts/MPFkGLZGe9M?feature=share
 
 Cache stampede happens when many requests observe the same cache key as expired or missing and all try to recompute it from the database at the same time. This can exhaust application threads, overload the database, increase latency, and sometimes trigger cascading failure.
 
-## Internal Mechanics
-There are 4 ways to fix this cache stampede:
-#### 1. Cache locking
-A lock lets 1 request rebuild the cache while other request wait in the line.
-##### Trade-off: 
-If rebuild is slow, 1000's of request going to timing out.
+## Mitigation Strategies
 
-- [ ] Redis - Simulate Cache Stampede and fix using cache locking, observe trade-offs #todo-medium
+### 1. Request Coalescing / Single Flight
 
-#### 2.  Request Coalescing / Collapse request instead of queuing  ✅
-Every duplicate request gets coalesced into one request, and every other request waits for it's turn. #CloudFare does this at #CDN layer, its backend sees 1 request even though there is a bunch of request for same key.
+Only one request regenerates the cache while duplicate requests wait for the same result.
 
-##### Trade-off:
-What if all the requests are unique? It again behaves like cache locking.
+This prevents multiple concurrent requests from overwhelming the backend for the same key.
 
-#### 3. Refresh randomly
-As cache values are approaching its TTL, each request has a small but growing chance of triggering a background refresh.
+Examples:
+- Go singleflight
+- CDN request collapsing
+- Cloudflare edge caching
 
-#### 4. Background refresh
-A dedicated worker pro-actively recomputes hot-keys before expiry.
+#### Trade-Offs
+- Unique requests still hit backend independently
+- Waiting requests may timeout if regeneration is slow
 
-##### Trade-off:
-We need to know what's hot ahead of time. 
+---
 
+### 2. Cache Locks
 
-## Performance Implications
+A distributed or local lock ensures only one worker rebuilds the cache entry.
 
-## Security Implications
+Other requests either:
+- wait
+- retry later
+- return stale data
 
-## Common Bugs
+#### Trade-Offs
+- Lock contention
+- Risk of deadlocks
+- Slow regeneration increases latency
 
-## Production Learnings
+---
 
-## Monitoring / Debugging
+### 3. Background Refresh / Cache Warming
 
-## Real-World Use Cases
+Hot keys are refreshed proactively before expiration using workers or scheduled jobs.
 
-## Trade-Offs
+This avoids sudden synchronized expiration.
 
-| Approach           | Pros                                                                                                                                        | Cons                                                                              |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| Cache locking      | Most widely used solution, easy to implement and effective for most cases.                                                                  | If rebuild is slow, 1000's of request going to timing out.                        |
-| Request Coalescing | CloudFlare uses it, logically reduces fetching for same request multiple times during its TTL, allowing other request to refresh its value. | If each request is unique, it still behaves like Cache Locking approach.          |
-| Refresh Randomly   | Gradually start updating the requests, when it is near expiry, more the number of request getting refreshed.                                | Still too many request at certain point of time, difficult to predict randomness. |
-| Background refresh | Efficient when worker knows what has will be asked next.                                                                                    | Impossible for a worker to know, what value gets called in cache in future.       |
+#### Trade-Offs
+- Requires identifying hot keys
+- Extra infrastructure complexity
+- Possible wasted recomputation
 
+---
+
+### 4. Probabilistic Early Expiration
+
+Requests gradually refresh cache before TTL expiry using randomized probability.
+
+This spreads regeneration over time.
+
+#### Trade-Offs
+- More complex implementation
+- Possible unnecessary refreshes
+
+---
+
+### 5. Exponential Backoff
+
+When regeneration is already happening, retry attempts use randomized delays.
+
+This reduces synchronized retry storms.
+
+#### Trade-Offs
+- Increased latency
+- More operational tuning required
+
+---
+
+### 6. Stale-While-Revalidate
+
+Serve stale cached data temporarily while refreshing asynchronously in background.
+
+Improves availability during regeneration.
+
+#### Trade-Offs
+- Clients may observe stale data
+- Requires careful expiration semantics
 ## Related Notes
 
 -  [[Caching]]  
@@ -73,3 +108,5 @@ We need to know what's hot ahead of time.
 - [[Redis]]
 
 ## Revision Notes
+
+- [ ]  Redis - Simulate Cache Stampede and fix using cache locking, observe trade-offs #todo-medium
