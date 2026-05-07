@@ -1,12 +1,16 @@
 {
   "recentFiles": [
     {
-      "basename": "Caching",
-      "path": "Caching.md"
-    },
-    {
       "basename": "Cache Stampede",
       "path": "02_Backend_Engineering/Cache Stampede.md"
+    },
+    {
+      "basename": "Redis",
+      "path": "02_Backend_Engineering/Redis.md"
+    },
+    {
+      "basename": "README",
+      "path": "README.md"
     },
     {
       "basename": "Home_Dashboard",
@@ -107,18 +111,6 @@
     {
       "basename": "Load Balancing",
       "path": "01_System_Design/Load Balancing.md"
-    },
-    {
-      "basename": "Welcome",
-      "path": "Welcome.md"
-    },
-    {
-      "basename": "README",
-      "path": "README.md"
-    },
-    {
-      "basename": "Home",
-      "path": "Home.md"
     }
   ],
   "omittedPaths": [],
