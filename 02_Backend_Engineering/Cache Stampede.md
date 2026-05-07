@@ -16,7 +16,7 @@ url: https://www.youtube.com/shorts/MPFkGLZGe9M?feature=share
 > [!info]
 > The ****Cache Stempede or Dogpile Problem**** is defined as a situation where the system receives multiple requests for a cached resource simultaneously for which the cache has already expired or has become invalid.
 
-## Purpose
+## Issue description
 
 Cache stampede happens when many requests observe the same cache key as expired or missing and all try to recompute it from the database at the same time. This can exhaust application threads, overload the database, increase latency, and sometimes trigger cascading failure.
 ![[cache stampede.png]]
