@@ -23,16 +23,16 @@ Cache stampede happens when many requests observe the same cache key as expired 
 
 ## 🎯 Which Strategy Should Be Used?
 
-| Scenario | Recommended Strategy | Characteristics | Tradeoffs |
-|---|---|---|---|
-| Same hot key gets many concurrent misses | [[#1. Request Coalescing / Single Flight]] | #availability/high #consistency/eventual #latency/low #throughput/high | - Unique requests still hit backend independently<br>- Waiting requests may timeout if regeneration is slow |
-| Cache rebuild is expensive and should happen only once | [[#2. Cache Locks]] | #availability/high #consistency/strong #latency/high #throughput/medium | - Lock contention<br>- Risk of deadlocks<br>- Slow regeneration increases latency |
-| Hot keys are predictable | [[#3. Background Refresh / Cache Warming]] | #availability/high #consistency/eventual #latency/low #throughput/high | - Requires identifying hot keys<br>- Extra infrastructure complexity<br>- Possible wasted recomputation |
-| Many keys expire simultaneously | [[#4. Probabilistic Early Expiration / TTL Jitter]] | #availability/high #consistency/eventual #latency/low #throughput/high | - More complex implementation<br>- Possible unnecessary refreshes |
-| Retry traffic becomes aggressive during locking | [[#5. Exponential Backoff]] | #availability/high #consistency/strong #latency/high #throughput/medium | - Increased latency<br>- More operational tuning required |
-| Slightly stale data is acceptable | [[#6. Stale-While-Revalidate]] | #availability/high #consistency/eventual #latency/low #throughput/high | - Clients may observe stale data<br>- Requires careful expiration semantics |
-| Data freshness must be strict | [[#2. Cache Locks]] + synchronous regeneration | #availability/high #consistency/strong #latency/high #throughput/low | Same as above using 2. Cache Locks |
-| User latency is more important than freshness | [[#6. Stale-While-Revalidate]] + async refresh | #availability/high #consistency/eventual #latency/low #throughput/high | Same as above using 6. Stale-While-Revalidate |
+| Scenario                                               | Recommended Strategy                                | Characteristics                                                         | Tradeoffs                                                                                                   |
+| ------------------------------------------------------ | --------------------------------------------------- | ----------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| Same hot key gets many concurrent misses               | [[#1. Request Coalescing / Single Flight]]          | #availability/high  #latency/low #throughput/high                       | - Unique requests still hit backend independently<br>- Waiting requests may timeout if regeneration is slow |
+| Cache rebuild is expensive and should happen only once | [[#2. Cache Locks]]                                 | #availability/high #consistency/strong #latency/high #throughput/medium | - Lock contention<br>- Risk of deadlocks<br>- Slow regeneration increases latency                           |
+| Hot keys are predictable                               | [[#3. Background Refresh / Cache Warming]]          | #availability/high #consistency/eventual #latency/low #throughput/high  | - Requires identifying hot keys<br>- Extra infrastructure complexity<br>- Possible wasted recomputation     |
+| Many keys expire simultaneously                        | [[#4. Probabilistic Early Expiration / TTL Jitter]] | #availability/high #consistency/eventual #latency/low #throughput/high  | - More complex implementation<br>- Possible unnecessary refreshes                                           |
+| Retry traffic becomes aggressive during locking        | [[#5. Exponential Backoff]]                         | #availability/high #consistency/strong #latency/high #throughput/medium | - Increased latency<br>- More operational tuning required                                                   |
+| Slightly stale data is acceptable                      | [[#6. Stale-While-Revalidate]]                      | #availability/high #consistency/eventual #latency/low #throughput/high  | - Clients may observe stale data<br>- Requires careful expiration semantics                                 |
+| Data freshness must be strict                          | [[#2. Cache Locks]] + synchronous regeneration      | #availability/high #consistency/strong #latency/high #throughput/low    | Same as above using 2. Cache Locks                                                                          |
+| User latency is more important than freshness          | [[#6. Stale-While-Revalidate]] + async refresh      | #availability/high #consistency/eventual #latency/low #throughput/high  | Same as above using 6. Stale-While-Revalidate                                                               |
 
 ---
 
