@@ -22,16 +22,16 @@ Cache stampede happens when many requests observe the same cache key as expired 
 
 ## 🎯 Which Strategy Should Be Used?
 
-| Scenario                                               | Recommended Strategy                        |
-| ------------------------------------------------------ | ------------------------------------------- |
-| Same hot key gets many concurrent misses               | [[#1. Request Coalescing / Single Flight]]  |
-| Cache rebuild is expensive and should happen only once | [[#2. Cache Locks]]                         |
-| Slightly stale data is acceptable                      | [[#6. Stale-While-Revalidate]]              |
-| Hot keys are predictable                               | Background Refresh / Cache Warming          |
-| Many keys expire simultaneously                        | Probabilistic Early Expiration / TTL Jitter |
-| Retry traffic becomes aggressive during locking        | Exponential Backoff                         |
-| Data freshness must be strict                          | Cache Lock + synchronous regeneration       |
-| User latency is more important than freshness          | Serve stale data + async refresh            |
+| Scenario                                               | Recommended Strategy                                |
+| ------------------------------------------------------ | --------------------------------------------------- |
+| Same hot key gets many concurrent misses               | [[#1. Request Coalescing / Single Flight]]          |
+| Cache rebuild is expensive and should happen only once | [[#2. Cache Locks]]                                 |
+| Hot keys are predictable                               | [[#3. Background Refresh / Cache Warming]]          |
+| Many keys expire simultaneously                        | [[#4. Probabilistic Early Expiration / TTL Jitter]] |
+| Retry traffic becomes aggressive during locking        | [[#5. Exponential Backoff]]                         |
+| Slightly stale data is acceptable                      | [[#6. Stale-While-Revalidate]]                      |
+| Data freshness must be strict                          | Cache Lock + synchronous regeneration               |
+| User latency is more important than freshness          | Serve stale data + async refresh                    |
 
 ---
 
