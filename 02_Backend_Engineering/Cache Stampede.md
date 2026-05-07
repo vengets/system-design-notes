@@ -19,7 +19,7 @@ url: https://www.youtube.com/shorts/MPFkGLZGe9M?feature=share
 ## Purpose
 
 Cache stampede happens when many requests observe the same cache key as expired or missing and all try to recompute it from the database at the same time. This can exhaust application threads, overload the database, increase latency, and sometimes trigger cascading failure.
-
+![[cache stampede.png]]
 ## 🎯 Which Strategy Should Be Used?
 
 | Scenario                                               | Recommended Strategy                                | Tradeoffs                                                                                                     |
