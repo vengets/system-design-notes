@@ -23,9 +23,13 @@ url: https://www.youtube.com/shorts/MPFkGLZGe9M?feature=share
 There are 4 ways to fix this cache stampede:
 #### 1. Cache locking
 A lock lets 1 request rebuild the cache while other request wait in the line.
+##### Trade-off: 
+If rebuild is slow, 1000's of request going to timing out.
+
 - [ ] Redis - Simulate Cache Stampede and fix using cache locking, observe trade-offs #todo-medium
-Trade-off: If rebuild is slow, 1000's of request going to timing out.
+
 #### 2.  Request Coalescing / Collapse request instead of queuing
+Every duplicate request gets coalesced into one request, and every other request waits for it's turn.
 
 
 
