@@ -1,6 +1,38 @@
 {
   "recentFiles": [
     {
+      "basename": "Chain of Responsibility Pattern",
+      "path": "01_System_Design/001_LLD/Chain of Responsibility Pattern.md"
+    },
+    {
+      "basename": "Factory Pattern",
+      "path": "01_System_Design/001_LLD/Factory Pattern.md"
+    },
+    {
+      "basename": "OOP Principles",
+      "path": "01_System_Design/001_LLD/OOP Principles.md"
+    },
+    {
+      "basename": "UML Class Diagrams",
+      "path": "01_System_Design/001_LLD/UML Class Diagrams.md"
+    },
+    {
+      "basename": "Prototype Pattern",
+      "path": "01_System_Design/001_LLD/Prototype Pattern.md"
+    },
+    {
+      "basename": "Iterator Pattern",
+      "path": "01_System_Design/001_LLD/Iterator Pattern.md"
+    },
+    {
+      "basename": "Command Pattern",
+      "path": "01_System_Design/001_LLD/Command Pattern.md"
+    },
+    {
+      "basename": "Abstract Factory Pattern",
+      "path": "01_System_Design/001_LLD/Abstract Factory Pattern.md"
+    },
+    {
       "basename": "2026-05-08",
       "path": "11_Daily_Logs/2026-05-08.md"
     },
