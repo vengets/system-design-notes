@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02_Backend_Engineering/Cache Stampede.md",
+                "file": "90_Templates/Backend_Problem_Pattern_Template.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Cache Stampede"
+              "title": "Backend_Problem_Pattern_Template"
             }
           }
         ],
@@ -167,13 +167,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02_Backend_Engineering/Cache Stampede.md",
+                "file": "90_Templates/Backend_Problem_Pattern_Template.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Cache Stampede"
+              "title": "Outline of Backend_Problem_Pattern_Template"
             }
           },
           {
@@ -246,9 +246,10 @@
   },
   "active": "071c5d03b0b80455",
   "lastOpenFiles": [
+    "02_Backend_Engineering/Cache Stampede.md",
+    "90_Templates/Backend_Problem_Pattern_Template.md",
     "99_Attachments/cache stampede.png",
     "02_Backend_Engineering/Redis.md",
-    "02_Backend_Engineering/Cache Stampede.md",
     "README.md",
     "Home.md",
     "Welcome.md",
