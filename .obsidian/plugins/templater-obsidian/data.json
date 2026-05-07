@@ -1,0 +1,82 @@
+{
+  "command_timeout": 5,
+  "templates_folder": "90_Templates",
+  "templates_pairs": [
+    [
+      "",
+      ""
+    ]
+  ],
+  "trigger_on_file_creation": true,
+  "auto_jump_to_cursor": false,
+  "enable_system_commands": false,
+  "shell_path": "",
+  "user_scripts_folder": "",
+  "enable_folder_templates": true,
+  "folder_templates": [
+    {
+      "folder": "01_System_Design",
+      "template": "90_Templates/System Design Topic Template.md"
+    },
+    {
+      "folder": "02_Backend_Engineering",
+      "template": "90_Templates/Backend Engineering Template.md"
+    },
+    {
+      "folder": "03_Spring_Boot",
+      "template": "90_Templates/Spring Boot Template.md"
+    },
+    {
+      "folder": "04_Databases",
+      "template": "90_Templates/Database Concept Template.md"
+    },
+    {
+      "folder": "05_Kafka",
+      "template": "90_Templates/Kafka Event-Driven Template.md"
+    },
+    {
+      "folder": "06_AWS",
+      "template": "90_Templates/AWS Cloud Service Template.md"
+    },
+    {
+      "folder": "07_Kubernetes",
+      "template": "90_Templates/Kubernetes Template.md"
+    },
+    {
+      "folder": "08_Interview_QA",
+      "template": "90_Templates/Interview Question Template.md"
+    },
+    {
+      "folder": "09_Diagrams",
+      "template": "90_Templates/Architecture Case Study Template.md"
+    },
+    {
+      "folder": "10_Print_Books",
+      "template": "90_Templates/Master Revision Book Template.md"
+    },
+    {
+      "folder": "11_Daily_Logs",
+      "template": "90_Templates/Daily Learning Log Template.md"
+    },
+    {
+      "folder": "01_System_Design/001_LLD",
+      "template": "90_Templates/LLD_Engineering_Template.md"
+    }
+  ],
+  "enable_file_templates": false,
+  "file_templates": [
+    {
+      "regex": ".*",
+      "template": ""
+    }
+  ],
+  "syntax_highlighting": true,
+  "syntax_highlighting_mobile": false,
+  "enabled_templates_hotkeys": [
+    ""
+  ],
+  "startup_templates": [
+    ""
+  ],
+  "intellisense_render": 1
+}

@@ -1,0 +1,52 @@
+{
+  "recentFiles": [
+    {
+      "basename": "2026-05-08",
+      "path": "11_Daily_Logs/2026-05-08.md"
+    },
+    {
+      "basename": "Daily Learning Log Template",
+      "path": "90_Templates/Daily Learning Log Template.md"
+    },
+    {
+      "basename": "LLD_Engineering_Template",
+      "path": "90_Templates/LLD_Engineering_Template.md"
+    },
+    {
+      "basename": "Load Balancing",
+      "path": "01_System_Design/Load Balancing.md"
+    },
+    {
+      "basename": "Home_Dashboard",
+      "path": "00_Home/Home_Dashboard.md"
+    },
+    {
+      "basename": "AWS Cloud Service Template",
+      "path": "90_Templates/AWS Cloud Service Template.md"
+    },
+    {
+      "basename": "Master Revision Book Template",
+      "path": "90_Templates/Master Revision Book Template.md"
+    },
+    {
+      "basename": "Architecture Case Study Template",
+      "path": "90_Templates/Architecture Case Study Template.md"
+    },
+    {
+      "basename": "Welcome",
+      "path": "Welcome.md"
+    },
+    {
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
+      "basename": "Home",
+      "path": "Home.md"
+    }
+  ],
+  "omittedPaths": [],
+  "omittedTags": [],
+  "updateOn": "file-open",
+  "omitBookmarks": false
+}
