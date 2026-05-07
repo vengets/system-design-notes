@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "Daily Learning Log Template",
+      "path": "90_Templates/Daily Learning Log Template.md"
+    },
+    {
+      "basename": "2026-05-08",
+      "path": "11_Daily_Logs/2026-05-08.md"
+    },
+    {
+      "basename": "Adapter Pattern",
+      "path": "01_System_Design/001_LLD/Adapter Pattern.md"
+    },
+    {
       "basename": "Chain of Responsibility Pattern",
       "path": "01_System_Design/001_LLD/Chain of Responsibility Pattern.md"
     },
@@ -31,14 +43,6 @@
     {
       "basename": "Abstract Factory Pattern",
       "path": "01_System_Design/001_LLD/Abstract Factory Pattern.md"
-    },
-    {
-      "basename": "2026-05-08",
-      "path": "11_Daily_Logs/2026-05-08.md"
-    },
-    {
-      "basename": "Daily Learning Log Template",
-      "path": "90_Templates/Daily Learning Log Template.md"
     },
     {
       "basename": "LLD_Engineering_Template",

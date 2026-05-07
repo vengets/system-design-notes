@@ -11,10 +11,14 @@
             "id": "50ef48137d646759",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "90_Templates/Daily Learning Log Template.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Daily Learning Log Template"
             }
           }
         ]
@@ -215,10 +219,12 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "f00827bfdcd3dc30",
+  "active": "50ef48137d646759",
   "lastOpenFiles": [
-    "02_Backend_Engineering/DRY and KISS Principles.md",
+    "11_Daily_Logs/2026-05-08.md",
+    "01_System_Design/001_LLD/Adapter Pattern.md",
     "02_Backend_Engineering/UML Class Diagrams.md",
+    "02_Backend_Engineering/DRY and KISS Principles.md",
     "02_Backend_Engineering/SOLID Principles.md",
     "02_Backend_Engineering/OOP Principles.md",
     "01_System_Design/001_LLD/Chain of Responsibility Pattern.md",
@@ -229,13 +235,11 @@
     "01_System_Design/001_LLD/Iterator Pattern.md",
     "01_System_Design/001_LLD/Command Pattern.md",
     "01_System_Design/001_LLD/Abstract Factory Pattern.md",
-    "11_Daily_Logs/2026-05-08.md",
     "01_System_Design/001_LLD/Facade Pattern.md",
     "01_System_Design/001_LLD/Proxy Pattern.md",
     "01_System_Design/001_LLD/Composite Pattern.md",
     "01_System_Design/001_LLD/Bridge Pattern.md",
     "01_System_Design/001_LLD/Decorator Pattern.md",
-    "01_System_Design/001_LLD/Adapter Pattern.md",
     "01_System_Design/001_LLD/Template Method Pattern.md",
     "01_System_Design/001_LLD/Strategy Pattern.md",
     "01_System_Design/001_LLD/Observer Pattern.md",
