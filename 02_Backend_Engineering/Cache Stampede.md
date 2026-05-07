@@ -20,6 +20,48 @@ url: https://www.youtube.com/shorts/MPFkGLZGe9M?feature=share
 
 Cache stampede happens when many requests observe the same cache key as expired or missing and all try to recompute it from the database at the same time. This can exhaust application threads, overload the database, increase latency, and sometimes trigger cascading failure.
 
+## 🎯 Which Strategy Should Be Used?
+
+| Scenario                                               | Recommended Strategy                        |
+| ------------------------------------------------------ | ------------------------------------------- |
+| Same hot key gets many concurrent misses               | [[#1. Request Coalescing / Single Flight]]  |
+| Cache rebuild is expensive and should happen only once | [[#2. Cache Locks]]                         |
+| Slightly stale data is acceptable                      | [[#6. Stale-While-Revalidate]]              |
+| Hot keys are predictable                               | Background Refresh / Cache Warming          |
+| Many keys expire simultaneously                        | Probabilistic Early Expiration / TTL Jitter |
+| Retry traffic becomes aggressive during locking        | Exponential Backoff                         |
+| Data freshness must be strict                          | Cache Lock + synchronous regeneration       |
+| User latency is more important than freshness          | Serve stale data + async refresh            |
+
+---
+
+### ✅ Recommended Real-World Combination
+
+```text
+Stale-While-Revalidate
+    +
+Request Coalescing
+    +
+TTL Jitter / Probabilistic Expiration
+```
+
+This combination:
+- protects backend systems
+- reduces latency spikes
+- prevents synchronized expiry
+- improves resilience during traffic bursts
+
+---
+
+### ⚠️ Important Insight
+
+Exponential backoff is usually a supporting mechanism, not the primary solution.
+
+It is commonly used together with:
+- [[#2. Cache Locks]]
+- retry handling
+- distributed coordination systems
+
 ## Mitigation Strategies
 
 ### 1. Request Coalescing / Single Flight
@@ -68,7 +110,7 @@ This avoids sudden synchronized expiration.
 
 ---
 
-### 4. Probabilistic Early Expiration
+### 4. Probabilistic Early Expiration / TTL Jitter
 
 Requests gradually refresh cache before TTL expiry using randomized probability.
 
@@ -101,6 +143,8 @@ Improves availability during regeneration.
 #### Trade-Offs
 - Clients may observe stale data
 - Requires careful expiration semantics
+
+
 ## Related Notes
 
 -  [[Caching]]  
