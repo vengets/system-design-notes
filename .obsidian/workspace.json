@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "90_Templates/Daily Learning Log Template.md",
+                "file": "11_Daily_Logs/2026-05-08.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Daily Learning Log Template"
+              "title": "2026-05-08"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Welcome.md",
+                "file": "11_Daily_Logs/2026-05-08.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Welcome"
+              "title": "Outline of 2026-05-08"
             }
           },
           {
@@ -194,9 +194,19 @@
               "icon": "git-pull-request",
               "title": "Source Control"
             }
+          },
+          {
+            "id": "55390f3c4ec968f7",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
+            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -221,9 +231,10 @@
   },
   "active": "50ef48137d646759",
   "lastOpenFiles": [
-    "90_Templates/Quote Bank.md",
-    "90_Templates/Daily Learning Log Template.md",
+    "11_Daily_Logs/2026-05-07.md",
     "11_Daily_Logs/2026-05-08.md",
+    "90_Templates/Daily Learning Log Template.md",
+    "90_Templates/Quote Bank.md",
     "01_System_Design/001_LLD/Adapter Pattern.md",
     "02_Backend_Engineering/UML Class Diagrams.md",
     "02_Backend_Engineering/DRY and KISS Principles.md",
@@ -246,7 +257,6 @@
     "01_System_Design/001_LLD/Strategy Pattern.md",
     "01_System_Design/001_LLD/Observer Pattern.md",
     "01_System_Design/001_LLD/Builder Pattern.md",
-    "01_System_Design/001_LLD/Singleton Pattern.md",
     "99_Attachments/educosys lld syllabus.png",
     "01_System_Design/001_LLD",
     "11_Daily_Logs",

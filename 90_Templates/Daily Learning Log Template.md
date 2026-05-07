@@ -201,4 +201,26 @@ What system behavior surprised me?
 
 ---
 
-> “Mastery is not intensity. Mastery is consistency.”
+> <%*  
+const quoteFile = app.vault.getAbstractFileByPath("90_Templates/Quote Bank.md");  
+  
+if (!quoteFile) {  
+tR += "Quote bank not found.";  
+} else {  
+const content = await app.vault.read(quoteFile);  
+  
+const quotes = content  
+.split("\n")  
+.map(line => line.trim())  
+.filter(line => line.startsWith("- "))  
+.map(line => line.replace(/^- /, "").trim())  
+.filter(Boolean);  
+  
+if (quotes.length === 0) {  
+tR += "No quotes found in quote bank.";  
+} else {  
+const quote = quotes[Math.floor(Math.random() * quotes.length)];  
+tR += quote;  
+}  
+}  
+%>
