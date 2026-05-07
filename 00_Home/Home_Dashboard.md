@@ -13,6 +13,7 @@ status: active
 
 ---
 
+# Bored? Stuck? Do the below items?
 ```dataview
 TASK
 FROM "01_System_Design" 
@@ -28,6 +29,15 @@ SORT contains(text, "#todo/high") DESC,
      contains(text, "#todo/low") DESC,
      file.mtime DESC
 ```
+
+```
+Below is the example usage of adding TODOs: 
+
+ - [ ] type your high priority task #todo/high
+ - [ ] type your task #todo/medium
+ - [ ] type your task #todo/low
+```
+
 ## ⚡ Command Center
 
 | Area | Open |
