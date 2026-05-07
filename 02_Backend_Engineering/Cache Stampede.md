@@ -20,32 +20,19 @@ url: https://www.youtube.com/shorts/MPFkGLZGe9M?feature=share
 
 Cache stampede happens when many requests observe the same cache key as expired or missing and all try to recompute it from the database at the same time. This can exhaust application threads, overload the database, increase latency, and sometimes trigger cascading failure.
 ![[cache stampede.png]]
-## 🎯 Which Strategy Should Be Used?
-
-| Scenario                                               | Recommended Strategy                                | Tradeoffs                                                                                                     |
-| ------------------------------------------------------ | --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| Same hot key gets many concurrent misses               | [[#1. Request Coalescing / Single Flight]]          | - Unique requests still hit backend independently<br>- Waiting requests may timeout if regeneration is slow   |
-| Cache rebuild is expensive and should happen only once | [[#2. Cache Locks]]                                 | - Lock contention<br>- Risk of deadlocks<br>- Slow regeneration increases latency                             |
-| Hot keys are predictable                               | [[#3. Background Refresh / Cache Warming]]          | - - Requires identifying hot keys<br>- - Extra infrastructure complexity<br>- - Possible wasted recomputation |
-| Many keys expire simultaneously                        | [[#4. Probabilistic Early Expiration / TTL Jitter]] | - More complex implementation<br>- Possible unnecessary refreshes                                             |
-| Retry traffic becomes aggressive during locking        | [[#5. Exponential Backoff]]                         | - Increased latency<br>- More operational tuning required                                                     |
-| Slightly stale data is acceptable                      | [[#6. Stale-While-Revalidate]]                      | - Clients may observe stale data<br>- Requires careful expiration semantics                                   |
-| Data freshness must be strict                          | [[#2. Cache Locks]] + synchronous regeneration      | Same as above using 2. Cache Locks                                                                            |
-| User latency is more important than freshness          | [[#6. Stale-While-Revalidate]] + async refresh      | Same as above using 6. Stale While Revalidate                                                                 |
 
 ## 🎯 Which Strategy Should Be Used?
 
-| Scenario | Recommended Strategy | Solution Tags | Tradeoffs |
+| Scenario | Recommended Strategy | Characteristics | Tradeoffs |
 |---|---|---|---|
-| Same hot key gets many concurrent misses | [[#1. Request Coalescing / Single Flight]] | #cache/request-coalescing #cache/singleflight #cache/hot-key #latency/cache-assisted #throughput/read-heavy #failure/thundering-herd | - Unique requests still hit backend independently<br>- Waiting requests may timeout if regeneration is slow |
-| Cache rebuild is expensive and should happen only once | [[#2. Cache Locks]] | #cache/cache-stampede #cache/distributed-cache #reliability/resilient #consistency/strong #resilience/timeout #failure/cache-stampede | - Lock contention<br>- Risk of deadlocks<br>- Slow regeneration increases latency |
-| Hot keys are predictable | [[#3. Background Refresh / Cache Warming]] | #cache/hot-key #cache/ttl #latency/low #latency/predictable #throughput/read-heavy #availability/graceful-degradation | - Requires identifying hot keys<br>- Extra infrastructure complexity<br>- Possible wasted recomputation |
-| Many keys expire simultaneously | [[#4. Probabilistic Early Expiration / TTL Jitter]] | #cache/jitter #cache/ttl #resilience/jitter #throughput/high #failure/thundering-herd #failure/cache-stampede | - More complex implementation<br>- Possible unnecessary refreshes |
-| Retry traffic becomes aggressive during locking | [[#5. Exponential Backoff]] | #resilience/backoff #resilience/retry #resilience/jitter #reliability/retry-safe #failure/retry-storm #api/retry-safe | - Increased latency<br>- More operational tuning required |
-| Slightly stale data is acceptable | [[#6. Stale-While-Revalidate]] | #cache/stale-while-revalidate #consistency/eventual #latency/low #availability/graceful-degradation #tradeoff/latency-vs-freshness | - Clients may observe stale data<br>- Requires careful expiration semantics |
-| Data freshness must be strict | [[#2. Cache Locks]] + synchronous regeneration | #consistency/strong #pacelc/consistency-over-latency #cache/distributed-cache #tradeoff/latency-vs-freshness #latency/p99-critical | Same as above using 2. Cache Locks |
-| User latency is more important than freshness | [[#6. Stale-While-Revalidate]] + async refresh | #latency/low #latency/async #pacelc/latency-over-consistency #consistency/eventual #cache/stale-while-revalidate | Same as above using 6. Stale-While-Revalidate |
-
+| Same hot key gets many concurrent misses | [[#1. Request Coalescing / Single Flight]] | #availability/high #consistency/eventual #latency/low #throughput/high | - Unique requests still hit backend independently<br>- Waiting requests may timeout if regeneration is slow |
+| Cache rebuild is expensive and should happen only once | [[#2. Cache Locks]] | #availability/high #consistency/strong #latency/high #throughput/medium | - Lock contention<br>- Risk of deadlocks<br>- Slow regeneration increases latency |
+| Hot keys are predictable | [[#3. Background Refresh / Cache Warming]] | #availability/high #consistency/eventual #latency/low #throughput/high | - Requires identifying hot keys<br>- Extra infrastructure complexity<br>- Possible wasted recomputation |
+| Many keys expire simultaneously | [[#4. Probabilistic Early Expiration / TTL Jitter]] | #availability/high #consistency/eventual #latency/low #throughput/high | - More complex implementation<br>- Possible unnecessary refreshes |
+| Retry traffic becomes aggressive during locking | [[#5. Exponential Backoff]] | #availability/high #consistency/strong #latency/high #throughput/medium | - Increased latency<br>- More operational tuning required |
+| Slightly stale data is acceptable | [[#6. Stale-While-Revalidate]] | #availability/high #consistency/eventual #latency/low #throughput/high | - Clients may observe stale data<br>- Requires careful expiration semantics |
+| Data freshness must be strict | [[#2. Cache Locks]] + synchronous regeneration | #availability/high #consistency/strong #latency/high #throughput/low | Same as above using 2. Cache Locks |
+| User latency is more important than freshness | [[#6. Stale-While-Revalidate]] + async refresh | #availability/high #consistency/eventual #latency/low #throughput/high | Same as above using 6. Stale-While-Revalidate |
 
 ---
 
