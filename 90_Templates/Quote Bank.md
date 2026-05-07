@@ -1,0 +1,106 @@
+# Engineering Quote Bank
+
+- Small consistent progress compounds into engineering mastery.
+- Clarity beats complexity.
+- Simplicity scales better than cleverness.
+- Systems fail at boundaries.
+- Good architecture reduces future decision cost.
+- Reliability is engineered intentionally.
+- Every abstraction leaks eventually.
+- Distributed systems are mostly trade-offs.
+- Scalability is constrained by coordination.
+- Senior engineers optimize for maintainability.
+- Premature optimization creates accidental complexity.
+- Coupling increases cognitive load.
+- Naming is an architectural decision.
+- A system is only as reliable as its failure handling.
+- Latency is a feature.
+- Backpressure is kindness in distributed systems.
+- Observability is a production requirement.
+- Technical debt compounds silently.
+- Great APIs reduce uncertainty.
+- Architecture is the management of trade-offs.
+- Most outages begin with small assumptions.
+- Consistency is more valuable than intensity.
+- Complexity grows faster than expected.
+- Explicit systems are easier to maintain than magical systems.
+- A monolith is easier until coordination becomes the bottleneck.
+- Every retry policy is a load amplifier.
+- Scalability without simplicity becomes fragility.
+- Reliability emerges from discipline, not hope.
+- The hardest bugs live in concurrency.
+- Loose coupling enables evolution.
+- Seniority is judgment under uncertainty.
+- High availability is a product feature.
+- Good design reduces future fear.
+- Production is the real test environment.
+- Every cache introduces invalidation problems.
+- Event-driven systems trade simplicity for scalability.
+- Good abstractions remove accidental complexity.
+- Interfaces define organizational boundaries.
+- Engineering maturity is reducing unknowns systematically.
+- Consistency creates compounding learning.
+- Architecture diagrams hide operational pain.
+- A distributed system is a coordination problem disguised as software.
+- Fast systems fail faster without safeguards.
+- Design patterns are tools, not trophies.
+- Maintainability is scalability for humans.
+- Every optimization has operational cost.
+- Software entropy grows unless constrained intentionally.
+- Stability enables innovation.
+- The best systems are boring in production.
+- Simple systems are easier to debug under pressure.
+- Strong fundamentals outperform trendy knowledge.
+- Operational excellence is engineered daily.
+- Testing reduces fear-driven development.
+- Most performance issues begin with poor assumptions.
+- Good engineers think about failure first.
+- Debugging teaches architecture.
+- Engineering is applied trade-off management.
+- Documentation reduces organizational memory loss.
+- Deep understanding outlasts frameworks.
+- Systems thinking means understanding interactions, not isolated parts.
+- Good software survives change gracefully.
+- Architecture exists to enable evolution.
+- Scaling teams is harder than scaling code.
+- Engineering wisdom compounds through reflection.
+- Production incidents reveal architectural truth.
+- Readability is a scalability feature.
+- Ownership improves software quality.
+- Constraints shape architecture.
+- Correctness matters more than cleverness.
+- Stable foundations accelerate learning.
+- Distributed consensus is expensive.
+- Simplicity improves operational resilience.
+- The best architecture minimizes irreversible decisions.
+- Mature systems optimize for recovery, not perfection.
+- Great engineers reduce cognitive load for others.
+- Every queue is hidden latency.
+- Monitoring without actionability creates noise.
+- Strong systems degrade gracefully.
+- Explicit contracts reduce integration failures.
+- A clean codebase accelerates decision-making.
+- Scalability requires predictable behavior.
+- Engineering discipline compounds silently over years.
+- High-quality notes create high-quality thinking.
+- Retrieval quality determines learning effectiveness.
+- Knowledge systems require intentional structure.
+- Canonical notes prevent knowledge fragmentation.
+- Daily refinement beats occasional intensity.
+- Long-term consistency creates uncommon expertise.
+- Architecture mastery comes from studying trade-offs repeatedly.
+- Understanding why matters more than memorizing how.
+- A reusable concept is more valuable than a temporary trick.
+- Strong systems are understandable systems.
+- Every layer of abstraction hides cost.
+- Engineering confidence comes from fundamentals.
+- Clear mental models accelerate debugging.
+- Operational simplicity is a competitive advantage.
+- Most scaling problems are coordination problems.
+- Software design reflects organizational thinking.
+- Engineering growth requires deliberate reflection.
+- High-leverage engineers reduce systemic friction.
+- Great systems balance flexibility with clarity.
+- Reliable systems assume failure constantly.
+- Good architecture ages well under change.
+- Technical mastery is accumulated patiently.

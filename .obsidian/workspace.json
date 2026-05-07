@@ -221,6 +221,8 @@
   },
   "active": "50ef48137d646759",
   "lastOpenFiles": [
+    "90_Templates/Quote Bank.md",
+    "90_Templates/Daily Learning Log Template.md",
     "11_Daily_Logs/2026-05-08.md",
     "01_System_Design/001_LLD/Adapter Pattern.md",
     "02_Backend_Engineering/UML Class Diagrams.md",
@@ -245,8 +247,6 @@
     "01_System_Design/001_LLD/Observer Pattern.md",
     "01_System_Design/001_LLD/Builder Pattern.md",
     "01_System_Design/001_LLD/Singleton Pattern.md",
-    "01_System_Design/001_LLD/SOLID Principles.md",
-    "01_System_Design/001_LLD/DRY and KISS Principles.md",
     "99_Attachments/educosys lld syllabus.png",
     "01_System_Design/001_LLD",
     "11_Daily_Logs",
