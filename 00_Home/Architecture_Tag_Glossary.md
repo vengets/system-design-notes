@@ -1,0 +1,252 @@
+
+### Core Quality Attributes
+- #availability/high
+- #availability/fault-tolerant
+- #availability/graceful-degradation
+- #availability/self-healing
+- #availability/multi-az
+- #availability/multi-region
+- #reliability/resilient
+- #reliability/retry-safe
+- #reliability/idempotent
+- #reliability/replayable
+- #reliability/recoverable
+- #reliability/degraded-mode
+- #consistency/strong
+- #consistency/eventual
+- #consistency/read-your-writes
+- #consistency/monotonic-read
+- #consistency/causal
+- #consistency/session
+- #consistency/bounded-staleness
+- #consistency/linearizable
+- #consistency/serializable
+- #latency/low
+- #latency/predictable
+- #latency/tail-latency-sensitive
+- #latency/p99-critical
+- #latency/async
+- #latency/cache-assisted
+- #throughput/high
+- #throughput/batch-optimized
+- #throughput/streaming
+- #throughput/write-heavy
+- #throughput/read-heavy
+- #scalability/horizontal
+- #scalability/vertical
+- #scalability/elastic
+- #scalability/partitioned
+- #scalability/sharded
+- #scalability/tenant-aware
+
+### CAP / PACELC / Distributed Tradeoff
+- #cap/cp
+- #cap/ap
+- #cap/partition-tolerant
+- #pacelc/latency-over-consistency
+- #pacelc/consistency-over-latency
+- #tradeoff/availability-vs-consistency
+- #tradeoff/latency-vs-freshness
+- #tradeoff/cost-vs-performance
+- #tradeoff/complexity-vs-reliability
+- #tradeoff/simplicity-vs-flexibility
+
+### Data & Database
+- #data/acid
+- #data/base
+- #data/transactional
+- #data/analytical
+- #data/oltp
+- #data/olap
+- #data/read-model
+- #data/write-model
+- #data/materialized-view
+- #data/indexing
+- #data/secondary-index
+- #data/denormalized
+- #data/normalized
+- #data/partitioned
+- #data/replicated
+- #data/leader-follower
+- #data/multi-leader
+- #data/leaderless
+- #data/quorum-read
+- #data/quorum-write
+- #data/conflict-resolution
+- #data/schema-evolution
+- #data/migration-safe
+- #data/backfill
+- #data/cdc
+- #data/event-sourcing
+- #data/cqrs
+- #data/saga
+- #data/outbox
+- #data/inbox
+
+### Caching
+- #cache/cache-aside
+- #cache/read-through
+- #cache/write-through
+- #cache/write-behind
+- #cache/ttl
+- #cache/jitter
+- #cache/stale-while-revalidate
+- #cache/request-coalescing
+- #cache/singleflight
+- #cache/negative-caching
+- #cache/hot-key
+- #cache/cache-stampede
+- #cache/invalidation
+- #cache/distributed-cache
+- #cache/local-cache
+- #cache/cdn
+- #cache/edge-cache
+
+### Messaging / Event-Driven
+- #messaging/async
+- #messaging/pub-sub
+- #messaging/queue
+- #messaging/stream
+- #messaging/kafka
+- #messaging/rabbitmq
+- #messaging/at-most-once
+- #messaging/at-least-once
+- #messaging/exactly-once
+- #messaging/ordering
+- #messaging/partition-ordering
+- #messaging/dlq
+- #messaging/retry-topic
+- #messaging/backpressure
+- #messaging/consumer-lag
+- #messaging/poison-message
+- #messaging/deduplication
+- #messaging/replay
+- #messaging/eventual-consistency
+
+### API / Integration
+- #api/rest
+- #api/graphql
+- #api/grpc
+- #api/webhook
+- #api/polling
+- #api/pagination
+- #api/rate-limiting
+- #api/throttling
+- #api/backward-compatible
+- #api/versioning
+- #api/idempotency-key
+- #api/retry-safe
+- #api/contract-first
+- #api/schema-validation
+- #api/bff
+- #api/api-gateway
+
+### Security
+- #security/authentication
+- #security/authorization
+- #security/rbac
+- #security/abac
+- #security/oauth2
+- #security/oidc
+- #security/jwt
+- #security/mTLS
+- #security/encryption-at-rest
+- #security/encryption-in-transit
+- #security/secrets-management
+- #security/audit-log
+- #security/least-privilege
+- #security/zero-trust
+- #security/input-validation
+- #security/rate-limit-abuse
+- #security/pii
+- #security/compliance
+
+### Observability / Operability
+- #observability/logging
+- #observability/metrics
+- #observability/tracing
+- #observability/correlation-id
+- #observability/slo
+- #observability/sli
+- #observability/error-budget
+- #observability/alerting
+- #observability/dashboard
+- #operability/debuggable
+- #operability/runbook
+- #operability/rollback-safe
+- #operability/feature-flag
+- #operability/configurable
+- #operability/low-toil
+- #operability/oncall-friendly
+
+### Resilience / Failure Handling
+- #resilience/retry
+- #resilience/timeout
+- #resilience/circuit-breaker
+- #resilience/bulkhead
+- #resilience/fallback
+- #resilience/load-shedding
+- #resilience/rate-limit
+- #resilience/backoff
+- #resilience/jitter
+- #resilience/deadline
+- #resilience/hedged-request
+- #resilience/graceful-shutdown
+- #resilience/chaos-tested
+
+### Deployment / Delivery
+- #deployment/blue-green
+- #deployment/canary
+- #deployment/rolling
+- #deployment/rollback
+- #deployment/zero-downtime
+- #deployment/db-migration-safe
+- #deployment/backward-compatible
+- #deployment/feature-toggle
+- #deployment/immutable-infra
+- #deployment/containerized
+- #deployment/kubernetes
+- #deployment/serverless
+- #deployment/iac
+
+### Cost / Efficiency
+- #cost/optimized
+- #cost/storage-efficient
+- #cost/compute-efficient
+- #cost/network-efficient
+- #cost/license-aware
+- #cost/pay-per-use
+- #cost/overprovisioned
+- #efficiency/resource-efficient
+- #efficiency/batch-saves-cost
+- #efficiency/cache-saves-cost
+
+### Domain / Workload Shape
+- #workload/read-heavy
+- #workload/write-heavy
+- #workload/bursty
+- #workload/spiky
+- #workload/real-time
+- #workload/batch
+- #workload/streaming
+- #workload/multi-tenant
+- #workload/tenant-isolated
+- #workload/global-users
+- #workload/mobile-clients
+- #workload/third-party-integrations
+
+### Failure Modes
+- #failure/cache-stampede
+- #failure/thundering-herd
+- #failure/retry-storm
+- #failure/cascading-failure
+- #failure/split-brain
+- #failure/network-partition
+- #failure/partial-failure
+- #failure/hot-partition
+- #failure/noisy-neighbor
+- #failure/clock-skew
+- #failure/duplicate-message
+- #failure/lost-update
+- #failure/race-condition
+- #failure/deadlock
