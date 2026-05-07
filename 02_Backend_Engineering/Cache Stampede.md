@@ -14,7 +14,7 @@ url: https://www.youtube.com/shorts/MPFkGLZGe9M?feature=share
 
 
 > [!info]
-> Backend engineering concept or implementation pattern.
+> The ****Cache Stempede or Dogpile Problem**** is defined as a situation where the system receives multiple requests for a cached resource simultaneously for which the cache has already expired or has become invalid.
 
 ## Purpose
 
@@ -22,16 +22,16 @@ Cache stampede happens when many requests observe the same cache key as expired 
 
 ## 🎯 Which Strategy Should Be Used?
 
-| Scenario                                               | Recommended Strategy                                | Tradeoffs                                                                                               |
-| ------------------------------------------------------ | --------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| Same hot key gets many concurrent misses               | [[#1. Request Coalescing / Single Flight]]          |                                                                                                         |
-| Cache rebuild is expensive and should happen only once | [[#2. Cache Locks]]                                 |                                                                                                         |
-| Hot keys are predictable                               | [[#3. Background Refresh / Cache Warming]]          | - Requires identifying hot keys<br>- Extra infrastructure complexity<br>- Possible wasted recomputation |
-| Many keys expire simultaneously                        | [[#4. Probabilistic Early Expiration / TTL Jitter]] |                                                                                                         |
-| Retry traffic becomes aggressive during locking        | [[#5. Exponential Backoff]]                         |                                                                                                         |
-| Slightly stale data is acceptable                      | [[#6. Stale-While-Revalidate]]                      |                                                                                                         |
-| Data freshness must be strict                          | Cache Lock + synchronous regeneration               |                                                                                                         |
-| User latency is more important than freshness          | Serve stale data + async refresh                    |                                                                                                         |
+| Scenario                                               | Recommended Strategy                                | Tradeoffs                                                                                                     |
+| ------------------------------------------------------ | --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| Same hot key gets many concurrent misses               | [[#1. Request Coalescing / Single Flight]]          | - Unique requests still hit backend independently<br>- Waiting requests may timeout if regeneration is slow   |
+| Cache rebuild is expensive and should happen only once | [[#2. Cache Locks]]                                 | - Lock contention<br>- Risk of deadlocks<br>- Slow regeneration increases latency                             |
+| Hot keys are predictable                               | [[#3. Background Refresh / Cache Warming]]          | - - Requires identifying hot keys<br>- - Extra infrastructure complexity<br>- - Possible wasted recomputation |
+| Many keys expire simultaneously                        | [[#4. Probabilistic Early Expiration / TTL Jitter]] | - More complex implementation<br>- Possible unnecessary refreshes                                             |
+| Retry traffic becomes aggressive during locking        | [[#5. Exponential Backoff]]                         | - Increased latency<br>- More operational tuning required                                                     |
+| Slightly stale data is acceptable                      | [[#6. Stale-While-Revalidate]]                      | - Clients may observe stale data<br>- Requires careful expiration semantics                                   |
+| Data freshness must be strict                          | [[#2. Cache Locks]] + synchronous regeneration      | Same as above using 2. Cache Locks                                                                            |
+| User latency is more important than freshness          | [[#6. Stale-While-Revalidate]] + async refresh      | Same as above using 6. Stale While Revalidate                                                                 |
 
 ---
 
@@ -75,12 +75,7 @@ Examples:
 - CDN request collapsing
 - Cloudflare edge caching
 
-#### Trade-Offs
-- Unique requests still hit backend independently
-- Waiting requests may timeout if regeneration is slow
-
 ---
-
 ### 2. Cache Locks
 
 A distributed or local lock ensures only one worker rebuilds the cache entry.
@@ -90,23 +85,12 @@ Other requests either:
 - retry later
 - return stale data
 
-#### Trade-Offs
-- Lock contention
-- Risk of deadlocks
-- Slow regeneration increases latency
-
 ---
-
 ### 3. Background Refresh / Cache Warming
 
 Hot keys are refreshed proactively before expiration using workers or scheduled jobs.
 
 This avoids sudden synchronized expiration.
-
-#### Trade-Offs
-- Requires identifying hot keys
-- Extra infrastructure complexity
-- Possible wasted recomputation
 
 ---
 
@@ -116,10 +100,6 @@ Requests gradually refresh cache before TTL expiry using randomized probability.
 
 This spreads regeneration over time.
 
-#### Trade-Offs
-- More complex implementation
-- Possible unnecessary refreshes
-
 ---
 
 ### 5. Exponential Backoff
@@ -127,10 +107,6 @@ This spreads regeneration over time.
 When regeneration is already happening, retry attempts use randomized delays.
 
 This reduces synchronized retry storms. Usually used together with [[#2. Cache Locks]].
-
-#### Trade-Offs
-- Increased latency
-- More operational tuning required
 
 ---
 
@@ -140,17 +116,13 @@ Serve stale cached data temporarily while refreshing asynchronously in backgroun
 
 Improves availability during regeneration.
 
-#### Trade-Offs
-- Clients may observe stale data
-- Requires careful expiration semantics
-
-
+---
 ## Related Notes
 
 -  [[Caching]]  
 - [[Cache Invalidation]]  
 - [[Redis]]
 
-## Revision Notes
+## Hands-on
 
 - [ ]  Redis - Simulate Cache Stampede and fix using cache locking, observe trade-offs #todo-medium
