@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Home_Dashboard",
+      "path": "00_Home/Home_Dashboard.md"
+    },
+    {
       "basename": "Cache Stampede",
       "path": "02_Backend_Engineering/Cache Stampede.md"
     },
@@ -99,10 +103,6 @@
     {
       "basename": "Load Balancing",
       "path": "01_System_Design/Load Balancing.md"
-    },
-    {
-      "basename": "Home_Dashboard",
-      "path": "00_Home/Home_Dashboard.md"
     },
     {
       "basename": "Welcome",
