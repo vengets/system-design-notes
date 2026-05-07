@@ -33,9 +33,9 @@ SORT contains(text, "#todo/high") DESC,
 ```
 Below is the example usage of adding TODOs: 
 
- - [ ] type your high priority task #todo/high
- - [ ] type your task #todo/medium
- - [ ] type your task #todo/low
+ - [ no space  ] type your high priority task #todo/high
+ - [   ] type your task #todo/medium
+ - [   ] type your task #todo/low
 ```
 
 ## ⚡ Command Center
@@ -100,24 +100,17 @@ LIMIT 5
 
 ---
 
+
+---
 ## ✅ Active To-Dos
 
 ```tasks
 not done
+path does not include 90_Templates
 sort by priority
 sort by due
 limit 15
 ```
-
----
-
-## 🎯 Today’s Focus
-
-- [ ] 
-- [ ] 
-- [ ] 
-
-> Rule: One deep concept. One implementation step. One revision.
 
 ---
 

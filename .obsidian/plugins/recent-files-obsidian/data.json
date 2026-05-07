@@ -1,20 +1,28 @@
 {
   "recentFiles": [
     {
-      "basename": "Home_Dashboard",
-      "path": "00_Home/Home_Dashboard.md"
-    },
-    {
-      "basename": "Adapter Pattern",
-      "path": "01_System_Design/001_LLD/Adapter Pattern.md"
-    },
-    {
       "basename": "Cache Stampede",
       "path": "02_Backend_Engineering/Cache Stampede.md"
     },
     {
+      "basename": "Home_Dashboard",
+      "path": "00_Home/Home_Dashboard.md"
+    },
+    {
+      "basename": "Abstract Factory Pattern",
+      "path": "01_System_Design/001_LLD/Abstract Factory Pattern.md"
+    },
+    {
+      "basename": "Daily Learning Log Template",
+      "path": "90_Templates/Daily Learning Log Template.md"
+    },
+    {
       "basename": "2026-05-08",
       "path": "11_Daily_Logs/2026-05-08.md"
+    },
+    {
+      "basename": "Adapter Pattern",
+      "path": "01_System_Design/001_LLD/Adapter Pattern.md"
     },
     {
       "basename": "System Design Topic Template",
@@ -65,10 +73,6 @@
       "path": "90_Templates/Backend Engineering Template.md"
     },
     {
-      "basename": "Daily Learning Log Template",
-      "path": "90_Templates/Daily Learning Log Template.md"
-    },
-    {
       "basename": "Chain of Responsibility Pattern",
       "path": "01_System_Design/001_LLD/Chain of Responsibility Pattern.md"
     },
@@ -95,10 +99,6 @@
     {
       "basename": "Command Pattern",
       "path": "01_System_Design/001_LLD/Command Pattern.md"
-    },
-    {
-      "basename": "Abstract Factory Pattern",
-      "path": "01_System_Design/001_LLD/Abstract Factory Pattern.md"
     },
     {
       "basename": "Load Balancing",
