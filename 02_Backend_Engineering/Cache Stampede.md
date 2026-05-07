@@ -39,11 +39,17 @@ Cache stampede happens when many requests observe the same cache key as expired 
 ### ✅ Recommended Real-World Combination
 
 ```text
-Stale-While-Revalidate
+Background Refresh
+    +
+TTL Jitter / Probabilistic Expiration
     +
 Request Coalescing
     +
-TTL Jitter / Probabilistic Expiration
+(
+    Stale-While-Revalidate
+    OR
+    Cache Lock + Exponential Backoff
+)
 ```
 
 This combination:
