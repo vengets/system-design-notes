@@ -84,7 +84,7 @@ This spreads regeneration over time.
 
 When regeneration is already happening, retry attempts use randomized delays.
 
-This reduces synchronized retry storms.
+This reduces synchronized retry storms. Usually used together with [[#2. Cache Locks]].
 
 #### Trade-Offs
 - Increased latency
