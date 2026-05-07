@@ -45,14 +45,6 @@ A dedicated worker pro-actively recomputes hot-keys before expiry.
 We need to know what's hot ahead of time. 
 
 
-## Lifecycle / Runtime Flow
-
-## Concurrency Implications
-
-## Transactional Implications
-
-## API Design Considerations
-
 ## Performance Implications
 
 ## Security Implications
@@ -68,8 +60,8 @@ We need to know what's hot ahead of time.
 ## Trade-Offs
 
 | Approach | Pros | Cons |
-|---|---|---|
-|  |  |  |
+| -------- | ---- | ---- |
+|          |      |      |
 
 ## Related Notes
 
