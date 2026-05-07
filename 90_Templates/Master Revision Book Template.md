@@ -9,7 +9,6 @@ book-topic:
 related:
 ---
 
-# {{title}}
 
 > [!summary]
 > Centralized printable revision and architecture synthesis document.

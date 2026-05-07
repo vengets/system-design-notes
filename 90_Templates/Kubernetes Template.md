@@ -8,7 +8,6 @@ source:
 related:
 ---
 
-# {{title}}
 
 > [!note]
 > Kubernetes should be studied as a distributed orchestration system, not just kubectl commands.

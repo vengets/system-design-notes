@@ -9,7 +9,6 @@ level:
 related:
 ---
 
-# {{title}}
 
 ## Question
 

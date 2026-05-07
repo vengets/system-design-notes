@@ -9,7 +9,6 @@ source:
 related:
 ---
 
-# {{title}}
 
 > [!abstract]
 > AWS services should be understood through architecture positioning and trade-offs, not memorization.

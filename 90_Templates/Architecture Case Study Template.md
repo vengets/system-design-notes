@@ -10,7 +10,6 @@ source:
 related:
 ---
 
-# {{title}}
 
 ## System Goal
 

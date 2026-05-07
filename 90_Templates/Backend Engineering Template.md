@@ -9,8 +9,7 @@ source:
 related:
 url:
 ---
-<% await tp.file.rename(await tp.system.prompt("Note Title")) %> 
-# <% tp.file.title %>
+
 
 > [!info]
 > Backend engineering concept or implementation pattern.

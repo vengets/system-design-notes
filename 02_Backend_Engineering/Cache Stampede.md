@@ -7,10 +7,9 @@ status: active
 language:
 source:
 related:
-url:
+url: https://www.youtube.com/shorts/MPFkGLZGe9M?feature=share
 ---
- 
-# Untitled
+
 
 > [!info]
 > Backend engineering concept or implementation pattern.

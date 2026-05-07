@@ -9,7 +9,6 @@ source:
 related:
 ---
 
-# {{title}}
 
 > [!important]
 > Event-driven systems are fundamentally about ordering, durability, retries, and asynchronous consistency.

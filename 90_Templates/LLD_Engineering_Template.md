@@ -11,7 +11,6 @@ source:
 related:
 ---
 
-# {{title}}
 
 > [!abstract]
 > Low-Level Design note focused on maintainability, extensibility, object interactions, and production-quality implementation thinking.

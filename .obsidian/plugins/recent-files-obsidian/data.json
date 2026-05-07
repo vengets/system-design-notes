@@ -1,24 +1,64 @@
 {
   "recentFiles": [
     {
+      "basename": "2026-05-08",
+      "path": "11_Daily_Logs/2026-05-08.md"
+    },
+    {
+      "basename": "Cache Stampede",
+      "path": "02_Backend_Engineering/Cache Stampede.md"
+    },
+    {
+      "basename": "System Design Topic Template",
+      "path": "90_Templates/System Design Topic Template.md"
+    },
+    {
+      "basename": "Spring Boot Template",
+      "path": "90_Templates/Spring Boot Template.md"
+    },
+    {
+      "basename": "Quote Bank",
+      "path": "90_Templates/Quote Bank.md"
+    },
+    {
+      "basename": "Master Revision Book Template",
+      "path": "90_Templates/Master Revision Book Template.md"
+    },
+    {
+      "basename": "LLD_Engineering_Template",
+      "path": "90_Templates/LLD_Engineering_Template.md"
+    },
+    {
+      "basename": "Kubernetes Template",
+      "path": "90_Templates/Kubernetes Template.md"
+    },
+    {
+      "basename": "Kafka Event-Driven Template",
+      "path": "90_Templates/Kafka Event-Driven Template.md"
+    },
+    {
+      "basename": "Interview Question Template",
+      "path": "90_Templates/Interview Question Template.md"
+    },
+    {
+      "basename": "Database Concept Template",
+      "path": "90_Templates/Database Concept Template.md"
+    },
+    {
+      "basename": "Architecture Case Study Template",
+      "path": "90_Templates/Architecture Case Study Template.md"
+    },
+    {
+      "basename": "AWS Cloud Service Template",
+      "path": "90_Templates/AWS Cloud Service Template.md"
+    },
+    {
       "basename": "Backend Engineering Template",
       "path": "90_Templates/Backend Engineering Template.md"
     },
     {
       "basename": "Daily Learning Log Template",
       "path": "90_Templates/Daily Learning Log Template.md"
-    },
-    {
-      "basename": "Cache Stampede.",
-      "path": "02_Backend_Engineering/Cache Stampede..md"
-    },
-    {
-      "basename": "2026-05-08",
-      "path": "11_Daily_Logs/2026-05-08.md"
-    },
-    {
-      "basename": "Quote Bank",
-      "path": "90_Templates/Quote Bank.md"
     },
     {
       "basename": "Adapter Pattern",
@@ -57,28 +97,12 @@
       "path": "01_System_Design/001_LLD/Abstract Factory Pattern.md"
     },
     {
-      "basename": "LLD_Engineering_Template",
-      "path": "90_Templates/LLD_Engineering_Template.md"
-    },
-    {
       "basename": "Load Balancing",
       "path": "01_System_Design/Load Balancing.md"
     },
     {
       "basename": "Home_Dashboard",
       "path": "00_Home/Home_Dashboard.md"
-    },
-    {
-      "basename": "AWS Cloud Service Template",
-      "path": "90_Templates/AWS Cloud Service Template.md"
-    },
-    {
-      "basename": "Master Revision Book Template",
-      "path": "90_Templates/Master Revision Book Template.md"
-    },
-    {
-      "basename": "Architecture Case Study Template",
-      "path": "90_Templates/Architecture Case Study Template.md"
     },
     {
       "basename": "Welcome",

@@ -9,7 +9,6 @@ source:
 related:
 ---
 
-# {{title}}
 
 > [!tip]
 > Spring Boot internals, runtime behavior, and production implications.

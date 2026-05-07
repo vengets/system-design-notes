@@ -10,7 +10,6 @@ source:
 related:
 ---
 
-# {{title}}
 
 > [!abstract]
 > Core problem this system/component solves.

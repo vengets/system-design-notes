@@ -9,7 +9,6 @@ source:
 related:
 ---
 
-# {{title}}
 
 > [!warning]
 > Database concepts should always be studied with consistency, latency, and scaling in mind.
