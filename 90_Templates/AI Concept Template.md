@@ -1,41 +1,55 @@
 # {{title}}
 
-# What Problem Does This Solve?
+# Type
+- Concept / Architecture / Project / Prompt / Case Study / Research
 
-# Why Was It Needed?
+# Status
+- Not Started / Learning / Practicing / Strong
+
+# What Is It?
+
+# Why Is It Needed?
+
+# Problem It Solves
 
 # Core Idea
 
-# How It Works Internally
+# How It Works
 
-# Architecture Flow
+# Architecture / Flow
 
-# Important Components
+# Components
+
+# Example
 
 # Advantages
 
 # Limitations
 
-# Failure Scenarios
+# Tradeoffs
 
-# Scaling Challenges
+# Real-World Usage
+
+# Production Considerations
+
+# Scaling Concerns
 
 # Security Concerns
 
 # Cost Considerations
 
-# Production Considerations
+# Failure Scenarios
 
-# Common Mistakes
+# Interview Notes
 
-# Real-World Use Cases
+# Prompt Patterns
+
+# Code Snippets
 
 # Related Concepts
 
-# Interview Questions
-
-# Staff+ Engineering Insights
-
-# Diagrams
-
 # References
+
+# My Understanding
+
+# Revision Notes

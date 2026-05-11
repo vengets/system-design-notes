@@ -41,28 +41,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "90_Templates/AI System Design Template.md",
+                "file": "90_Templates/AI Concept Template.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "AI System Design Template"
-            }
-          },
-          {
-            "id": "afe5e56c91a0ff22",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "90_Templates/AI Tool Evaluation Template.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "AI Tool Evaluation Template"
+              "title": "AI Concept Template"
             }
           },
           {
@@ -71,17 +56,17 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "90_Templates/AI Project Template.md",
+                "file": "12_AI_Engineering/00_Home/00_AI_Home.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "AI Project Template"
+              "title": "00_AI_Home"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -212,13 +197,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "90_Templates/AI Project Template.md",
+                "file": "12_AI_Engineering/00_Home/00_AI_Home.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of AI Project Template"
+              "title": "Outline of 00_AI_Home"
             }
           },
           {
@@ -291,11 +276,13 @@
   },
   "active": "d8f4eaac48d9e30f",
   "lastOpenFiles": [
-    "90_Templates/AI Tool Evaluation Template.md",
-    "90_Templates/AI Project Template.md",
-    "90_Templates/AI System Design Template.md",
+    "12_AI_Engineering/00_Home/AI Engineering Revision Book.md",
+    "12_AI_Engineering/00_Home/00_AI_Home.md",
+    "12_AI_Engineering/00_Home",
     "90_Templates/AI Concept Template.md",
-    "12_AI_Engineering/00_AI_Home.md",
+    "90_Templates/AI Tool Evaluation Template.md",
+    "90_Templates/AI System Design Template.md",
+    "90_Templates/AI Project Template.md",
     "00_Home/Home_Dashboard.md",
     "12_AI_Engineering/99_Attachments",
     "12_AI_Engineering/90_Templates",
@@ -306,7 +293,6 @@
     "12_AI_Engineering/21_AI_Case_Studies",
     "12_AI_Engineering/20_AI_Interview_QA",
     "12_AI_Engineering/19_AI_Projects",
-    "12_AI_Engineering/18_LLMOps",
     "Home.md",
     "02_Backend_Engineering/Cache Stampede.md",
     "00_Home/Architecture_Tag_Glossary.md",
@@ -327,7 +313,6 @@
     "90_Templates/LLD_Engineering_Template.md",
     "90_Templates/Kubernetes Template.md",
     "90_Templates/Kafka Event-Driven Template.md",
-    "90_Templates/Interview Question Template.md",
     "99_Attachments/educosys lld syllabus.png"
   ]
 }

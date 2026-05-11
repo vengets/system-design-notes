@@ -6,8 +6,9 @@
 - [ ] Agentic Systems
 
 ---
+# TO LEARN
 
-# Tier 1
+##  Tier 1
 
 ## Fundamentals
 - [[Transformer Architecture]]
