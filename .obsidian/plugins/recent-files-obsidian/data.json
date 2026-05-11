@@ -1,12 +1,12 @@
 {
   "recentFiles": [
     {
-      "basename": "Local Setups",
-      "path": "00_Home/Local Setups.md"
-    },
-    {
       "basename": "2026-05-12",
       "path": "11_Daily_Logs/2026-05-12.md"
+    },
+    {
+      "basename": "# Local Development Setups",
+      "path": "00_Home/# Local Development Setups.md"
     },
     {
       "basename": "Notes - ChatGPT Prompt Engineering for Developers",

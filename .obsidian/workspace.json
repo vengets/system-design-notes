@@ -56,13 +56,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_Home/Local Setups.md",
+                "file": "11_Daily_Logs/2026-05-12.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Local Setups"
+              "title": "2026-05-12"
             }
           }
         ],
@@ -197,13 +197,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00_Home/Local Setups.md",
+                "file": "11_Daily_Logs/2026-05-12.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Local Setups"
+              "title": "Outline of 2026-05-12"
             }
           },
           {
@@ -276,8 +276,8 @@
   },
   "active": "d8f4eaac48d9e30f",
   "lastOpenFiles": [
+    "00_Home/# Local Development Setups.md",
     "11_Daily_Logs/2026-05-12.md",
-    "00_Home/Local Setups.md",
     "12_AI_Engineering/03_Prompt_Engineering/Notes - ChatGPT Prompt Engineering for Developers.md",
     "Documents/Insta360/Studio",
     "Documents/Insta360",
