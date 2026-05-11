@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "GUIDE",
+      "path": "12_AI_Engineering/00_Home/GUIDE.md"
+    },
+    {
       "basename": "00_AI_Home",
       "path": "12_AI_Engineering/00_Home/00_AI_Home.md"
     },
@@ -9,12 +13,12 @@
       "path": "12_AI_Engineering/00_Home/AI Engineering Revision Book.md"
     },
     {
-      "basename": "AI Concept Template",
-      "path": "90_Templates/AI Concept Template.md"
-    },
-    {
       "basename": "Home_Dashboard",
       "path": "00_Home/Home_Dashboard.md"
+    },
+    {
+      "basename": "AI Concept Template",
+      "path": "90_Templates/AI Concept Template.md"
     },
     {
       "basename": "Home",

@@ -5,6 +5,8 @@
 - [ ] RAG
 - [ ] Agentic Systems
 
+[[GUIDE]]
+
 ---
 # TO LEARN
 

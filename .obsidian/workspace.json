@@ -56,13 +56,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "12_AI_Engineering/00_Home/00_AI_Home.md",
+                "file": "12_AI_Engineering/00_Home/GUIDE.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "00_AI_Home"
+              "title": "GUIDE"
             }
           }
         ],
@@ -197,13 +197,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "12_AI_Engineering/00_Home/00_AI_Home.md",
+                "file": "12_AI_Engineering/00_Home/GUIDE.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 00_AI_Home"
+              "title": "Outline of GUIDE"
             }
           },
           {
@@ -276,14 +276,15 @@
   },
   "active": "d8f4eaac48d9e30f",
   "lastOpenFiles": [
-    "12_AI_Engineering/00_Home/AI Engineering Revision Book.md",
     "12_AI_Engineering/00_Home/00_AI_Home.md",
+    "12_AI_Engineering/00_Home/GUIDE.md",
+    "12_AI_Engineering/00_Home/AI Engineering Revision Book.md",
+    "00_Home/Home_Dashboard.md",
     "12_AI_Engineering/00_Home",
     "90_Templates/AI Concept Template.md",
     "90_Templates/AI Tool Evaluation Template.md",
     "90_Templates/AI System Design Template.md",
     "90_Templates/AI Project Template.md",
-    "00_Home/Home_Dashboard.md",
     "12_AI_Engineering/99_Attachments",
     "12_AI_Engineering/90_Templates",
     "12_AI_Engineering/25_AI_Cheatsheets",
@@ -312,7 +313,6 @@
     "90_Templates/Master Revision Book Template.md",
     "90_Templates/LLD_Engineering_Template.md",
     "90_Templates/Kubernetes Template.md",
-    "90_Templates/Kafka Event-Driven Template.md",
     "99_Attachments/educosys lld syllabus.png"
   ]
 }
