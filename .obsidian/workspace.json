@@ -276,8 +276,13 @@
   },
   "active": "d8f4eaac48d9e30f",
   "lastOpenFiles": [
-    "00_Home/# Local Development Setups.md",
+    "Home.md",
     "11_Daily_Logs/2026-05-12.md",
+    "00_Home.md",
+    "00_Home 1.md",
+    "11_Daily_Logs/Local Development Setups.md",
+    "11_Daily_Logs/JupyterForAI.md",
+    "00_Home/# Local Development Setups.md",
     "12_AI_Engineering/03_Prompt_Engineering/Notes - ChatGPT Prompt Engineering for Developers.md",
     "Documents/Insta360/Studio",
     "Documents/Insta360",
@@ -301,7 +306,6 @@
     "90_Templates/AI Tool Evaluation Template.md",
     "90_Templates/AI System Design Template.md",
     "90_Templates/AI Project Template.md",
-    "Home.md",
     "02_Backend_Engineering/Cache Stampede.md",
     "00_Home/Architecture_Tag_Glossary.md",
     "90_Templates/Backend_Problem_Pattern_Template.md",
@@ -310,10 +314,6 @@
     "README.md",
     "Welcome.md",
     "Caching.md",
-    "01_System_Design/001_LLD/Abstract Factory Pattern.md",
-    "90_Templates/Daily Learning Log Template.md",
-    "11_Daily_Logs/2026-05-08.md",
-    "01_System_Design/001_LLD/Adapter Pattern.md",
     "99_Attachments/educosys lld syllabus.png"
   ]
 }

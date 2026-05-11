@@ -45,10 +45,6 @@
       "path": "90_Templates/AI Concept Template.md"
     },
     {
-      "basename": "Home",
-      "path": "Home.md"
-    },
-    {
       "basename": "Cache Stampede",
       "path": "02_Backend_Engineering/Cache Stampede.md"
     },
