@@ -56,13 +56,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "12_AI_Engineering/00_Home/GUIDE.md",
+                "file": "08_Interview_Prep/Behavioural Round.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "GUIDE"
+              "title": "Behavioural Round"
             }
           }
         ],
@@ -197,13 +197,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "12_AI_Engineering/00_Home/GUIDE.md",
+                "file": "08_Interview_Prep/Behavioural Round.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of GUIDE"
+              "title": "Outline of Behavioural Round"
             }
           },
           {
@@ -276,8 +276,11 @@
   },
   "active": "d8f4eaac48d9e30f",
   "lastOpenFiles": [
-    "12_AI_Engineering/00_Home/00_AI_Home.md",
+    "08_Interview_Prep/Canva Prep Plan.md",
+    "08_Interview_Prep/Behavioural Round.md",
+    "08_Interview_Prep/Behavioural Round.md",
     "12_AI_Engineering/00_Home/GUIDE.md",
+    "12_AI_Engineering/00_Home/00_AI_Home.md",
     "12_AI_Engineering/00_Home/AI Engineering Revision Book.md",
     "00_Home/Home_Dashboard.md",
     "12_AI_Engineering/00_Home",
@@ -310,9 +313,6 @@
     "90_Templates/System Design Topic Template.md",
     "90_Templates/Spring Boot Template.md",
     "90_Templates/Quote Bank.md",
-    "90_Templates/Master Revision Book Template.md",
-    "90_Templates/LLD_Engineering_Template.md",
-    "90_Templates/Kubernetes Template.md",
     "99_Attachments/educosys lld syllabus.png"
   ]
 }
