@@ -56,13 +56,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "08_Interview_Prep/Canva/JD - Backend Engineer.md",
+                "file": "12_AI_Engineering/03_Prompt_Engineering/Notes - ChatGPT Prompt Engineering for Developers.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "JD - Backend Engineer"
+              "title": "Notes - ChatGPT Prompt Engineering for Developers"
             }
           }
         ],
@@ -197,13 +197,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "08_Interview_Prep/Canva/JD - Backend Engineer.md",
+                "file": "12_AI_Engineering/03_Prompt_Engineering/Notes - ChatGPT Prompt Engineering for Developers.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of JD - Backend Engineer"
+              "title": "Outline of Notes - ChatGPT Prompt Engineering for Developers"
             }
           },
           {
@@ -251,7 +251,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 7
       }
     ],
     "direction": "horizontal",
@@ -276,9 +276,11 @@
   },
   "active": "d8f4eaac48d9e30f",
   "lastOpenFiles": [
+    "11_Daily_Logs/2026-05-12.md",
+    "12_AI_Engineering/03_Prompt_Engineering/Notes - ChatGPT Prompt Engineering for Developers.md",
+    "08_Interview_Prep/Canva/JD - Backend Engineer.md",
     "Documents",
     "08_Interview_Prep/Canva/Canva Prep Plan.md",
-    "08_Interview_Prep/Canva/JD - Backend Engineer.md",
     "08_Interview_Prep/Canva",
     "08_Interview_Prep/Behavioural Round.md",
     "12_AI_Engineering/00_Home/GUIDE.md",
@@ -297,7 +299,6 @@
     "12_AI_Engineering/23_AI_Research_Summaries",
     "12_AI_Engineering/22_AI_Architecture_Diagrams",
     "12_AI_Engineering/21_AI_Case_Studies",
-    "12_AI_Engineering/20_AI_Interview_QA",
     "Home.md",
     "02_Backend_Engineering/Cache Stampede.md",
     "00_Home/Architecture_Tag_Glossary.md",
@@ -312,7 +313,6 @@
     "11_Daily_Logs/2026-05-08.md",
     "01_System_Design/001_LLD/Adapter Pattern.md",
     "90_Templates/System Design Topic Template.md",
-    "90_Templates/Spring Boot Template.md",
     "99_Attachments/educosys lld syllabus.png"
   ]
 }
