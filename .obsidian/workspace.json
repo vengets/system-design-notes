@@ -34,9 +34,24 @@
               "icon": "lucide-file",
               "title": "Cache Stampede"
             }
+          },
+          {
+            "id": "44357a6f6a9431ee",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00_Home/Home_Dashboard.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Home_Dashboard"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -167,13 +182,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02_Backend_Engineering/Cache Stampede.md",
+                "file": "00_Home/Home_Dashboard.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Cache Stampede"
+              "title": "Outline of Home_Dashboard"
             }
           },
           {
@@ -244,16 +259,16 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "52b6d705a35c81f2",
+  "active": "44357a6f6a9431ee",
   "lastOpenFiles": [
+    "Home.md",
+    "02_Backend_Engineering/Cache Stampede.md",
     "12_AI_Engineering",
     "00_Home/Architecture_Tag_Glossary.md",
     "90_Templates/Backend_Problem_Pattern_Template.md",
-    "02_Backend_Engineering/Cache Stampede.md",
     "99_Attachments/cache stampede.png",
     "02_Backend_Engineering/Redis.md",
     "README.md",
-    "Home.md",
     "Welcome.md",
     "Caching.md",
     "00_Home/Home_Dashboard.md",
@@ -282,7 +297,6 @@
     "09_Diagrams",
     "08_Interview_QA",
     "07_Kubernetes",
-    "06_AWS",
-    "05_Kafka"
+    "06_AWS"
   ]
 }
