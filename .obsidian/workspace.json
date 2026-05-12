@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02_Backend_Engineering/Telstra Health.md",
+                "file": "02_Backend_Engineering/Telstra Health - STAR.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Telstra Health"
+              "title": "Telstra Health - STAR"
             }
           }
         ]
@@ -233,7 +233,7 @@
   "active": "f17f8fde5dce6f3f",
   "lastOpenFiles": [
     "Home.md",
-    "02_Backend_Engineering/Telstra Health.md",
+    "02_Backend_Engineering/Telstra Health - STAR.md",
     "11_Daily_Logs/2026-05-12.md",
     "00_Home.md",
     "00_Home 1.md",
