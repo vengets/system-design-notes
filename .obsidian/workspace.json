@@ -4,69 +4,25 @@
     "type": "split",
     "children": [
       {
-        "id": "b9fdba1798f52e0a",
+        "id": "832a17256ca3ba44",
         "type": "tabs",
         "children": [
           {
-            "id": "50ef48137d646759",
+            "id": "f17f8fde5dce6f3f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_Home/Home_Dashboard.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Home_Dashboard"
-            }
-          },
-          {
-            "id": "071c5d03b0b80455",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02_Backend_Engineering/Cache Stampede.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Cache Stampede"
-            }
-          },
-          {
-            "id": "44357a6f6a9431ee",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "90_Templates/AI Concept Template.md",
+                "file": "Home.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "AI Concept Template"
-            }
-          },
-          {
-            "id": "d8f4eaac48d9e30f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "11_Daily_Logs/2026-05-12.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "2026-05-12"
+              "title": "Home"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -274,7 +230,7 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "d8f4eaac48d9e30f",
+  "active": "f17f8fde5dce6f3f",
   "lastOpenFiles": [
     "Home.md",
     "11_Daily_Logs/2026-05-12.md",
