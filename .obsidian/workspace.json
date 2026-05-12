@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Home.md",
+                "file": "02_Backend_Engineering/Telstra Health.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Home"
+              "title": "Telstra Health"
             }
           }
         ]
@@ -233,6 +233,7 @@
   "active": "f17f8fde5dce6f3f",
   "lastOpenFiles": [
     "Home.md",
+    "02_Backend_Engineering/Telstra Health.md",
     "11_Daily_Logs/2026-05-12.md",
     "00_Home.md",
     "00_Home 1.md",
@@ -269,7 +270,6 @@
     "02_Backend_Engineering/Redis.md",
     "README.md",
     "Welcome.md",
-    "Caching.md",
     "99_Attachments/educosys lld syllabus.png"
   ]
 }
