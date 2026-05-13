@@ -161,6 +161,8 @@ Mention:
     
 - idempotency
     
+1. Investigating why API is slow on prod but works fine on dev/test environments.
+2. 
 
 ---
 
