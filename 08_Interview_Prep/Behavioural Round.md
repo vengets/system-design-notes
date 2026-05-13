@@ -12,7 +12,15 @@ related:
 
 ## Stories
 
+**
 
+### Exit Statement:
+
+My role ended as part of a broader organisational restructure that affected multiple teams within the company.
+
+I’m genuinely excited about the timing because it gives me the opportunity to explore roles with companies like yours, which is something I’ve been wanting to do for a while.
+
+**
 ### Story 1: Zilingo Partial Order Cancellation Feature
 
 “At Zilingo, we only supported full order cancellation. One day I learned from customer support that a family in Indonesia couldn’t exchange just one dress for their daughter before a festival because they would have needed to return the entire order.
