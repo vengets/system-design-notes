@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "08_Interview_Prep/Behavioural Round.md",
+                "file": "08_Interview_Prep/Projects.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Behavioural Round"
+              "title": "Projects"
             }
           }
         ]
@@ -232,6 +232,8 @@
   },
   "active": "e109b92b9b847906",
   "lastOpenFiles": [
+    "08_Interview_Prep/Behavioural Round.md",
+    "08_Interview_Prep/Projects.md",
     "08_Interview_Prep/salesforce/Plan.md",
     "Home.md",
     "08_Interview_Prep/salesforce",
@@ -257,7 +259,6 @@
     "Documents/Photo Booth Library",
     "08_Interview_Prep/Canva/JD - Backend Engineer.md",
     "08_Interview_Prep/Canva/Canva Prep Plan.md",
-    "08_Interview_Prep/Behavioural Round.md",
     "12_AI_Engineering/00_Home/GUIDE.md",
     "12_AI_Engineering/00_Home/00_AI_Home.md",
     "12_AI_Engineering/00_Home/AI Engineering Revision Book.md",
@@ -269,7 +270,6 @@
     "00_Home/Architecture_Tag_Glossary.md",
     "90_Templates/Backend_Problem_Pattern_Template.md",
     "02_Backend_Engineering/Redis.md",
-    "README.md",
     "99_Attachments/educosys lld syllabus.png"
   ]
 }
