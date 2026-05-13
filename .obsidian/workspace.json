@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Home.md",
+                "file": "08_Interview_Prep/salesforce/Plan.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Home"
+              "title": "Plan"
             }
           }
         ]
@@ -232,10 +232,12 @@
   },
   "active": "e109b92b9b847906",
   "lastOpenFiles": [
+    "Home.md",
+    "08_Interview_Prep/salesforce/Plan.md",
+    "08_Interview_Prep/salesforce",
     "02_Backend_Engineering/Cache Stampede.md",
     "99_Attachments/cache stampede.png",
     "02_Backend_Engineering/Telstra Health - STAR.md",
-    "Home.md",
     "11_Daily_Logs/2026-05-12.md",
     "00_Home.md",
     "00_Home 1.md",
@@ -254,7 +256,6 @@
     "Documents/Photo Booth Library/Contents",
     "Documents/Photo Booth Library",
     "08_Interview_Prep/Canva/JD - Backend Engineer.md",
-    "Documents",
     "08_Interview_Prep/Canva/Canva Prep Plan.md",
     "08_Interview_Prep/Behavioural Round.md",
     "12_AI_Engineering/00_Home/GUIDE.md",
