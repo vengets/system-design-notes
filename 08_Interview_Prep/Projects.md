@@ -10,327 +10,114 @@ related:
 ---
 
 
-# Scenario 2 — Kafka Consumer Lag Causing System-Wide Processing Delays
+# Scenario 2 — Kafka Consumer Lag Incident (STAR Format)
 
 ## Situation
 
-We had an event-driven participant processing pipeline using Kafka and microservices. One evening, we noticed participant workflows were getting delayed significantly. New events were entering Kafka successfully, but downstream processing SLAs started failing, and some participant actions were delayed by hours.
-
-This became critical because downstream screening actions and notifications depended on timely processing.
+At Telstra Health, we had an event-driven participant processing platform using Kafka and microservices. During a high-volume period, we started seeing significant delays in participant workflows, and some downstream screening actions were taking hours instead of minutes.
 
 ---
 
-## Detection
+## Task
 
-The incident was identified through:
-
-- Kafka consumer lag alerts
-    
-- Spike in workflow processing times
-    
-- Increase in DLQ entries
-    
-- Growing queue depth in monitoring dashboards
-    
-- Support team reporting delayed participant updates
-    
-
-Grafana showed:
-
-- steady producer throughput
-    
-- slowing consumer throughput
-    
-- increasing lag on a few partitions only
-    
+As one of the senior backend engineers, my responsibility was to investigate the production degradation, stabilize the system quickly, and prevent backlog growth from impacting critical participant processing SLAs.
 
 ---
 
-## Root Cause
+## Action
 
-The issue turned out to be uneven partition hot-spotting combined with database contention.
+I started by analyzing Kafka consumer lag metrics, partition distribution, application logs, and downstream service latency. We discovered that a subset of Kafka partitions were becoming hotspots because certain participant events triggered expensive downstream enrichment queries.
 
-A small subset of participant events triggered expensive downstream enrichment queries. Because Kafka preserves ordering within a partition:
+Since Kafka guarantees ordering within a partition, a single slow event blocked processing for that entire partition. At the same time, aggressive retry policies without proper backoff created a retry storm, which saturated consumer thread pools and increased database pressure further.
 
-- one slow event blocked the entire partition
-    
-- lag accumulated rapidly
-    
-- retries amplified processing pressure
-    
-- thread pools became saturated
-    
+To stabilize the platform:
 
-Additionally:
-
-- retry logic was too aggressive
+- we temporarily paused problematic consumers,
     
-- failed messages were retried immediately
+- redirected poison messages faster into DLQs,
     
-- consumers spent more time retrying than processing healthy traffic
+- introduced exponential backoff with jitter,
+    
+- optimized slow database queries,
+    
+- added caching for repeated enrichment lookups,
+    
+- and scaled consumers horizontally after validating partition distribution.
     
 
-This created a retry storm.
+I also coordinated incident communication across platform, database, and support teams while providing regular recovery updates.
 
 ---
 
-## Mitigation
+## Result
 
-Immediate mitigation steps:
+We successfully stabilized the system, reduced Kafka lag back to normal levels, and restored workflow processing SLAs. After the incident, we implemented stronger observability around partition-level lag, retry metrics, thread pool saturation, and DLQ growth.
 
-- temporarily reduced consumer concurrency pressure
-    
-- paused problematic consumers briefly
-    
-- redirected poison messages to DLQ faster
-    
-- introduced backoff with jitter
-    
-- increased partition count strategically
-    
-- scaled consumers horizontally carefully
-    
-
-We also:
-
-- isolated expensive enrichment calls
-    
-- cached repeated DB lookups
-    
-- optimized slow SQL queries
-    
+One of the biggest long-term improvements was redesigning parts of the enrichment workflow to reduce synchronous dependencies and make the platform more resilient under production-scale load.
 
 ---
 
-## Communication
-
-I coordinated communication between:
-
-- platform engineers
-    
-- DB teams
-    
-- support teams
-    
-- product owners
-    
-
-We created:
-
-- impact timelines
-    
-- recovery ETA updates
-    
-- processing backlog visibility
-    
-
----
-
-## Long-Term Prevention
-
-We implemented:
-
-- adaptive retry strategies
-    
-- exponential backoff with jitter
-    
-- partition balancing analysis
-    
-- consumer lag SLO dashboards
-    
-- circuit breakers around enrichment services
-    
-- bulkhead isolation for heavy workflows
-    
-- better DLQ routing policies
-    
-
-We also redesigned parts of the enrichment flow to reduce synchronous dependencies.
-
----
-
-## Observability Improvements
-
-We added:
-
-- per-partition lag dashboards
-    
-- retry rate monitoring
-    
-- DLQ growth alerts
-    
-- tracing across Kafka consumers
-    
-- thread pool saturation metrics
-    
-- processing time percentile dashboards
-    
-
----
-
-# Staff-Level Talking Point
-
-“The real challenge wasn’t Kafka itself — it was understanding how retry behavior, partition ordering guarantees, and downstream dependency latency interacted together under production-scale load.”
-
-That sounds VERY senior.
-
----
-
-# Scenario 3 — Duplicate Processing Incident Despite “Successful” APIs
+# Scenario 3 — Duplicate Processing / Idempotency Incident (STAR Format)
 
 ## Situation
 
-We had a critical participant onboarding workflow involving multiple async microservices. During a production incident, duplicate participant records started appearing intermittently, creating downstream inconsistencies and operational risk.
+We had a distributed participant onboarding workflow involving multiple async microservices and APIs. During a production incident, duplicate participant records started appearing intermittently, causing downstream workflow inconsistencies and operational concerns.
 
-The issue was especially dangerous because APIs were returning HTTP 200 successfully, so from the client perspective everything appeared healthy.
-
----
-
-## Detection
-
-The issue was detected through:
-
-- reconciliation job mismatches
-    
-- duplicate participant alerts
-    
-- operational support escalation
-    
-- unusual increase in downstream workflow triggers
-    
-
-Initially, logs looked normal because requests themselves succeeded.
+The challenging part was that APIs were still returning successful HTTP responses, so the issue was not immediately obvious.
 
 ---
 
-## Root Cause
+## Task
 
-The root cause was a distributed idempotency failure during timeout cascades.
-
-What happened:
-
-1. upstream service timed out waiting for response
-    
-2. client retried request
-    
-3. original request actually completed later
-    
-4. retry request also succeeded
-    
-5. duplicate workflow execution occurred
-    
-
-The system lacked a strong centralized idempotency enforcement layer.
-
-Compounding factors:
-
-- retries occurred across multiple services
-    
-- eventual consistency delayed visibility
-    
-- race conditions appeared under concurrent load
-    
-- duplicate detection existed only partially
-    
-
-This only emerged under production concurrency patterns.
+My responsibility was to identify why duplicate processing was happening, contain the impact safely, and improve the reliability of the workflow under retries and partial failures.
 
 ---
 
-## Mitigation
+## Action
 
-Immediate actions:
+I began by tracing request flows across services and correlating retry patterns with workflow execution logs. We discovered that during timeout cascades, some upstream services retried requests before downstream processing had fully completed.
 
-- paused affected workflow processing
+In certain scenarios:
+
+- the original request completed successfully after a delay,
     
-- identified impacted records
+- the retry request also succeeded,
     
-- created reconciliation scripts
-    
-- temporarily enforced stricter duplicate validation
-    
-- reduced retry aggressiveness
+- and both executions triggered downstream workflows independently.
     
 
-We then:
+The platform lacked a strong centralized idempotency enforcement mechanism across services.
 
-- implemented centralized idempotency key validation
-    
-- added request deduplication storage
-    
-- enforced transactional workflow checkpoints
-    
+To mitigate the issue:
 
----
-
-## Communication
-
-I worked closely with:
-
-- business stakeholders
+- we temporarily paused affected workflows,
     
-- operations teams
+- introduced stricter duplicate validation,
     
-- platform engineers
+- created reconciliation scripts for impacted records,
     
-- database teams
+- and reduced retry aggressiveness across dependent services.
     
 
-We communicated:
+I then worked on implementing centralized idempotency handling using request tokens, deduplication persistence, transactional checkpoints, and safer retry behavior for async workflows.
 
-- scope of duplicate impact
-    
-- rollback safety
-    
-- reconciliation progress
-    
-- temporary operational workarounds
-    
+We also improved timeout hierarchy configuration between services to reduce cascading retries.
 
 ---
 
-## Long-Term Prevention
+## Result
 
-We introduced:
+We eliminated duplicate workflow execution scenarios for the affected flows and significantly improved overall reliability during transient failures and retries.
 
-- idempotency tokens across APIs
+Following the incident, we added:
+
+- idempotency metrics,
     
-- deduplication tables with unique constraints
+- retry tracing,
     
-- workflow state validation
+- duplicate detection alerts,
     
-- exactly-once processing safeguards where possible
-    
-- retry governance policies
-    
-- timeout hierarchy improvements
+- and workflow reconciliation dashboards.
     
 
-We also redesigned parts of the workflow to become safely retryable.
-
----
-
-## Observability Improvements
-
-We added:
-
-- duplicate processing alerts
-    
-- retry correlation tracing
-    
-- idempotency hit/miss metrics
-    
-- workflow replay dashboards
-    
-- timeout dependency tracing
-    
-- reconciliation health dashboards
-    
-
----
-
-# VERY Strong Staff-Level Line
-
-“One important lesson was that successful HTTP responses do not necessarily guarantee correct distributed-system behavior. Reliability in distributed systems is often about handling retries, partial failures, and eventual consistency safely.”
-
-That line sounds extremely strong in senior interviews.
+The incident became an important engineering learning around distributed-system reliability, especially the fact that successful HTTP responses alone do not guarantee correctness in asynchronous systems.
