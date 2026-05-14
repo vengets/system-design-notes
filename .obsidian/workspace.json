@@ -95,10 +95,11 @@
               "type": "recent-files",
               "state": {},
               "icon": "clock",
-              "title": "Recent Files"
+              "title": "Recent files"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -215,8 +216,8 @@
             "state": {
               "type": "advanced-tables-toolbar",
               "state": {},
-              "icon": "spreadsheet",
-              "title": "Advanced Tables"
+              "icon": "lucide-ghost",
+              "title": "advanced-tables-toolbar"
             }
           }
         ],
