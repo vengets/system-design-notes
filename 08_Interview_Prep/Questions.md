@@ -79,19 +79,6 @@ Example:
 |Business|payment failures|
 
 ---
-
-# 4. “How do you identify bottlenecks?”
-
-Expected:
-
-- traces
-- flame graphs
-- dependency latency
-- DB query timing
-- thread pool saturation
-
----
-
 # Example Datadog Query Style
 
 ## Logs
