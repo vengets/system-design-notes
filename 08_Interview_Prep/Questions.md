@@ -16,7 +16,7 @@ related:
 
 1. (Business Problem) We had to integrate a new national lung screening program alongside existing cancer screening flows.
 2. (Architecture) The architecture included Spring Boot microservices, Kafka for event streams, and a Sql Server database.
-3. (Scale) We processed about 10,000 screening events daily across two regions.
+3. (Scale) We processed about 10,000 screening events daily across AU region.
 4. (Failure Handling) For failures—if assessment booking failed—we used compensating events to cancel orders and notify downstream.
 5. (Incident) In production, we once saw Kafka lag cause delays; we improved by adding monitoring and scaling consumers.
 6. (Tradeoffs) We traded off strong consistency for eventual consistency, prioritizing uptime and asynchronous processing.
