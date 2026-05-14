@@ -33,3 +33,89 @@ related:
 6. Permanent fix: What long-term improvements did you implement—like architectural changes or new policies?
 7. Leadership: How did you coordinate the response and ensure the team learned from it?
 8. Lessons: What would you do differently next time or scale up?
+
+### 3. “API latency increased. What do you check first?”
+
+Strong answer:
+
+```
+- Error rates
+- - P95/P99 latency
+- - Recent deployments
+- - CPU/memory
+- - DB latency
+- - Kafka lag
+- - downstream dependency health
+- - traces for slow requests
+```
+
+This is VERY common.
+
+---
+
+### 4. “How would you debug a production issue?”
+
+Expected flow:
+
+```
+dashboard→ metrics→ logs→ traces→ infra→ dependency map
+```
+
+---
+
+### 5. “What metrics would you monitor?”
+
+Very important.
+
+Example:
+
+|Layer|Metrics|
+|---|---|
+|API|latency, RPS, errors|
+|Kafka|lag, retries|
+|DB|slow queries, pool usage|
+|JVM|heap, GC|
+|Kubernetes|pod restarts|
+|Business|payment failures|
+
+---
+
+# 4. “How do you identify bottlenecks?”
+
+Expected:
+
+- traces
+- flame graphs
+- dependency latency
+- DB query timing
+- thread pool saturation
+
+---
+
+# Example Datadog Query Style
+
+## Logs
+
+```
+service:payment-service status:error
+```
+
+---
+
+## Metrics
+
+```
+avg:system.cpu.user{service:payment-service}
+```
+
+---
+
+## Latency
+
+```
+p95:trace.http.request.duration{service:payment-service}
+```
+
+You are NOT expected to memorize syntax usually.
+
+But understanding the concepts helps a lot.
