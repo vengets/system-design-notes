@@ -25,14 +25,17 @@ related:
 
 ### 2. Tell me about a significant production incident you personally handled.
 
-1. What broke: We had an alert in our log metrics dashboard, Describe the incident—what failed, and how you noticed.
-2. Detection: How did monitoring or alerts help you detect it, and how did you investigate?
-3. Immediate actions: What steps did you take to mitigate or stop the impact?
-4. Root cause: What was the underlying issue, and how did you confirm it?
-5. Tradeoffs: What short-term tradeoffs did you make (e.g., disabling a feature, prioritizing uptime)?
-6. Permanent fix: What long-term improvements did you implement—like architectural changes or new policies?
-7. Leadership: How did you coordinate the response and ensure the team learned from it?
-8. Lessons: What would you do differently next time or scale up?
+- **What broke:** We received critical alerts for rising Kafka consumer lag, elevated P95 latency, and delayed participant-processing workflows caused by downstream database contention.
+- **Detection:** OpenTelemetry traces, RED metrics dashboards, Kafka lag monitoring, and correlation-ID-based log analysis helped us identify retry storms and thread pool saturation in a specific consumer service.
+- **Immediate actions:** We scaled consumer pods, reduced retry aggressiveness, paused non-critical workloads, enabled stricter circuit breakers, and redirected failing events to retry topics and DLQs.
+- **Root cause:** A recent concurrency increase combined with poorly tuned retry/backoff settings caused synchronized retries that amplified database contention and Kafka lag during peak load.
+- **Tradeoffs:** We temporarily disabled optional enrichment flows and accepted eventual consistency delays to prioritize core participant-processing stability and restore throughput quickly.
+- **Permanent fix:** We implemented retry topics with exponential backoff and jitter, DLQ policies, idempotent consumers, bulkhead isolation, improved partition distribution, and stronger observability dashboards.
+- **Leadership:** I coordinated the incident bridge, assigned subsystem owners, communicated mitigation progress, and later led the postmortem and operational improvement discussions.
+- **Lessons:** We learned that retries can amplify failures at scale, so we improved retry governance, load testing, adaptive throttling, and downstream protection mechanisms for future resilience.
+
+---
+
 
 ### 3. “API latency increased. What do you check first?”
 

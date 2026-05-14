@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02_Backend_Engineering/SLA timeframe.md",
+                "file": "08_Interview_Prep/Questions.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "SLA timeframe"
+              "title": "Questions"
             }
           }
         ]
@@ -233,9 +233,10 @@
   },
   "active": "b6b6776ac4af4b53",
   "lastOpenFiles": [
+    "02_Backend_Engineering/Telstra Health - STAR.md",
+    "02_Backend_Engineering/SLA timeframe.md",
     "99_Attachments/Pasted image 20260515070416.png",
     "08_Interview_Prep/Questions.md",
-    "02_Backend_Engineering/SLA timeframe.md",
     "08_Interview_Prep/Projects.md",
     "02_Backend_Engineering/DB Selection Guide.md",
     "Excalidraw/Drawing 2026-05-15 03.42.52.excalidraw.md",
@@ -257,7 +258,6 @@
     "Excalidraw/Scripts/Downloaded/Box Selected Elements.md",
     "Excalidraw/Scripts/Downloaded/Change shape of selected elements.svg",
     "Excalidraw/Scripts/Downloaded/Change shape of selected elements.md",
-    "Excalidraw/Scripts/Downloaded/Connect elements.svg",
     "Excalidraw/Scripts/Downloaded/Connect elements.md",
     "Excalidraw/Scripts/Downloaded/Create DrawIO file.md",
     "Excalidraw/Scripts/Downloaded/Create new markdown file and embed into active drawing.md",
