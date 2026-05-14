@@ -23,3 +23,4 @@ related:
 7. (Ownership) I personally decided to use outbox patterns to ensure reliable event publishing.
 8. (Redesign) Today, I’d redesign with multi-region Kafka clusters and finer-grained services for better scaling.
 
+### 2. Tell me about a significant production incident you personally handled.
