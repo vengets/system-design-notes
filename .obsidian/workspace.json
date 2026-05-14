@@ -13,16 +13,29 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Home.md",
+                "file": "02_Backend_Engineering/DB Selection Guide.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Home"
+              "title": "DB Selection Guide"
+            }
+          },
+          {
+            "id": "9e69a22a91072abf",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2026-05-15 03.42.52.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2026-05-15 03.42.52.excalidraw"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -211,7 +224,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -223,19 +237,22 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "obsidian-excalidraw-plugin:New drawing": false,
       "templater-obsidian:Templater": false,
       "obsidian-git:Open Git source control": false,
       "omnisearch:Omnisearch": false,
-      "homepage:Open homepage": false
+      "homepage:Open homepage": false,
+      "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "b6b6776ac4af4b53",
+  "active": "9e69a22a91072abf",
   "lastOpenFiles": [
-    "08_Interview_Prep/Projects.md",
-    "08_Interview_Prep/Behavioural Round.md",
+    "Excalidraw/Drawing 2026-05-15 03.42.52.excalidraw.md",
+    "02_Backend_Engineering/DB Selection Guide.md",
+    "Excalidraw",
     "08_Interview_Prep/salesforce/Plan.md",
     "Home.md",
+    "08_Interview_Prep/Projects.md",
+    "08_Interview_Prep/Behavioural Round.md",
     "08_Interview_Prep/salesforce",
     "02_Backend_Engineering/Cache Stampede.md",
     "99_Attachments/cache stampede.png",
@@ -256,7 +273,6 @@
     "Documents/Photo Booth Library/Contents/PkgInfo",
     "Documents/Photo Booth Library/Pictures",
     "Documents/Photo Booth Library/Contents",
-    "Documents/Photo Booth Library",
     "08_Interview_Prep/Canva/JD - Backend Engineer.md",
     "08_Interview_Prep/Canva/Canva Prep Plan.md",
     "12_AI_Engineering/00_Home/GUIDE.md",
@@ -268,8 +284,6 @@
     "90_Templates/AI System Design Template.md",
     "90_Templates/AI Project Template.md",
     "00_Home/Architecture_Tag_Glossary.md",
-    "90_Templates/Backend_Problem_Pattern_Template.md",
-    "02_Backend_Engineering/Redis.md",
     "99_Attachments/educosys lld syllabus.png"
   ]
 }
