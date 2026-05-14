@@ -24,3 +24,12 @@ related:
 8. (Redesign) Today, I’d redesign with multi-region Kafka clusters and finer-grained services for better scaling.
 
 ### 2. Tell me about a significant production incident you personally handled.
+
+1. What broke: We had an alert in our log metrics dashboard, Describe the incident—what failed, and how you noticed.
+2. Detection: How did monitoring or alerts help you detect it, and how did you investigate?
+3. Immediate actions: What steps did you take to mitigate or stop the impact?
+4. Root cause: What was the underlying issue, and how did you confirm it?
+5. Tradeoffs: What short-term tradeoffs did you make (e.g., disabling a feature, prioritizing uptime)?
+6. Permanent fix: What long-term improvements did you implement—like architectural changes or new policies?
+7. Leadership: How did you coordinate the response and ensure the team learned from it?
+8. Lessons: What would you do differently next time or scale up?
