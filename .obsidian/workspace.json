@@ -13,29 +13,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02_Backend_Engineering/DB Selection Guide.md",
+                "file": "08_Interview_Prep/Questions.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "DB Selection Guide"
-            }
-          },
-          {
-            "id": "9e69a22a91072abf",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing 2026-05-15 03.42.52.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-05-15 03.42.52.excalidraw"
+              "title": "Questions"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,8 +85,7 @@
               "title": "Recent files"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -245,8 +231,12 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "9e69a22a91072abf",
+  "active": "b6b6776ac4af4b53",
   "lastOpenFiles": [
+    "08_Interview_Prep/Projects.md",
+    "08_Interview_Prep/Questions.md",
+    "02_Backend_Engineering/DB Selection Guide.md",
+    "Excalidraw/Drawing 2026-05-15 03.42.52.excalidraw.md",
     "Excalidraw/Scripts/Downloaded/Add Connector Point.svg",
     "Excalidraw/Scripts/Downloaded/Add Connector Point.md",
     "Excalidraw/Scripts/Downloaded/Add Link to Existing File and Open.svg",
@@ -267,7 +257,6 @@
     "Excalidraw/Scripts/Downloaded/Change shape of selected elements.md",
     "Excalidraw/Scripts/Downloaded/Connect elements.svg",
     "Excalidraw/Scripts/Downloaded/Connect elements.md",
-    "Excalidraw/Scripts/Downloaded/Create DrawIO file.svg",
     "Excalidraw/Scripts/Downloaded/Create DrawIO file.md",
     "Excalidraw/Scripts/Downloaded/Create new markdown file and embed into active drawing.md",
     "Excalidraw/Scripts/Downloaded/Custom Zoom.md",
@@ -280,9 +269,6 @@
     "Excalidraw/Scripts/Downloaded/GPT-Draw-a-UI.md",
     "Excalidraw/Scripts/Downloaded/Image Occlusion.md",
     "Excalidraw/Scripts/Downloaded/Invert colors.md",
-    "Excalidraw/Scripts/Downloaded/Lighten background color.md",
-    "Excalidraw/Scripts/Downloaded/Linear Calendar Generator.md",
-    "Excalidraw/Scripts/Downloaded/Mindmap Builder.md",
     "Excalidraw/Scripts/Downloaded",
     "Excalidraw/Scripts",
     "Excalidraw",

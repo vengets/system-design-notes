@@ -1,12 +1,20 @@
 {
   "recentFiles": [
     {
-      "basename": "Drawing 2026-05-15 03.42.52.excalidraw",
-      "path": "Excalidraw/Drawing 2026-05-15 03.42.52.excalidraw.md"
+      "basename": "Questions",
+      "path": "08_Interview_Prep/Questions.md"
+    },
+    {
+      "basename": "Projects",
+      "path": "08_Interview_Prep/Projects.md"
     },
     {
       "basename": "DB Selection Guide",
       "path": "02_Backend_Engineering/DB Selection Guide.md"
+    },
+    {
+      "basename": "Drawing 2026-05-15 03.42.52.excalidraw",
+      "path": "Excalidraw/Drawing 2026-05-15 03.42.52.excalidraw.md"
     },
     {
       "basename": "Plan",
@@ -15,10 +23,6 @@
     {
       "basename": "Home",
       "path": "Home.md"
-    },
-    {
-      "basename": "Projects",
-      "path": "08_Interview_Prep/Projects.md"
     },
     {
       "basename": "Behavioural Round",
