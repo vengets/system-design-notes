@@ -36,6 +36,9 @@ related:
 
 ---
 
+### 3. How do you handle disagreements?
+In one project, there was a disagreement around whether we should use synchronous REST calls between services or move to Kafka-based asynchronous communication for participant assessment processing. 
+Some engineers preferred REST because it was simpler to debug and easier to reason about transactionally, while I argued that the downstream systems were unreliable and tightly coupling services through synchronous calls would create cascading failures and latency spikes during peak processing. I supported my argument using production metrics showing increasing timeout rates and thread pool exhaustion during downstream slowness, and I proposed an event-driven approach with retries, DLQs, idempotency, and eventual consistency instead. We finally adopted a hybrid approach where critical real-time validations remained synchronous while long-running workflows moved asynchronously through Kafka, which reduced failure propagation significantly. Looking back, I think the compromise was better than my original position because some synchronous flows were genuinely needed for user experience and operational simplicity.
 
 ### 3. “API latency increased. What do you check first?”
 

@@ -13,6 +13,21 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "08_Interview_Prep/Behavioural Round.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Behavioural Round"
+            }
+          },
+          {
+            "id": "00e849aef9ecdc81",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "08_Interview_Prep/Questions.md",
                 "mode": "source",
                 "source": false,
@@ -21,8 +36,24 @@
               "icon": "lucide-file",
               "title": "Questions"
             }
+          },
+          {
+            "id": "21967f6cb37d07ca",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "08_Interview_Prep/salesforce/Plan.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Plan"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -231,13 +262,15 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "b6b6776ac4af4b53",
+  "active": "00e849aef9ecdc81",
   "lastOpenFiles": [
+    "08_Interview_Prep/Projects.md",
+    "08_Interview_Prep/salesforce/Plan.md",
+    "08_Interview_Prep/Questions.md",
+    "08_Interview_Prep/Behavioural Round.md",
     "02_Backend_Engineering/Telstra Health - STAR.md",
     "02_Backend_Engineering/SLA timeframe.md",
     "99_Attachments/Pasted image 20260515070416.png",
-    "08_Interview_Prep/Questions.md",
-    "08_Interview_Prep/Projects.md",
     "02_Backend_Engineering/DB Selection Guide.md",
     "Excalidraw/Drawing 2026-05-15 03.42.52.excalidraw.md",
     "Excalidraw/Scripts/Downloaded/Add Connector Point.svg",
@@ -267,8 +300,6 @@
     "Excalidraw/Scripts/Downloaded/Elbow connectors.md",
     "Excalidraw/Scripts/Downloaded/Fixed spacing.md",
     "Excalidraw/Scripts/Downloaded/Fixed vertical distance.md",
-    "Excalidraw/Scripts/Downloaded/ExcaliAI.md",
-    "Excalidraw/Scripts/Downloaded/GPT-Draw-a-UI.md",
     "Excalidraw/Scripts/Downloaded",
     "Excalidraw/Scripts",
     "Excalidraw",
