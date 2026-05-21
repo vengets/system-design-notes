@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Home.md",
+                "file": "02_Backend_Engineering/Nodejs.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Home"
+              "title": "Nodejs"
             }
           }
         ]
@@ -233,6 +233,8 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "Home.md",
+    "02_Backend_Engineering/Nodejs.md",
     "08_Interview_Prep/Questions.md",
     "08_Interview_Prep/Projects.md",
     "08_Interview_Prep/Behavioural Round.md",
@@ -267,8 +269,6 @@
     "Excalidraw/Scripts/Downloaded/Darken background color.md",
     "Excalidraw/Scripts/Downloaded/Deconstruct selected elements into new drawing.md",
     "Excalidraw/Scripts/Downloaded/Elbow connectors.md",
-    "Excalidraw/Scripts/Downloaded/Fixed spacing.md",
-    "Excalidraw/Scripts/Downloaded/Fixed vertical distance.md",
     "Excalidraw/Scripts/Downloaded",
     "Excalidraw/Scripts",
     "Excalidraw",
