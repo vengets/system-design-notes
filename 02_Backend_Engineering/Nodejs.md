@@ -52,6 +52,10 @@ module.exports.greet = function() {
 var greet3 = require('./greet3');
 greet3.greet();
 greet3.greeting = 'Changed hello world!';
+
+
+var greet3b = require('./greet3');
+greet3b.greet();
 ```
 
 ``` greet3.js
@@ -85,14 +89,20 @@ module.exports = Greetr;
 
 #### Type 5
 ```
-var greet2 = require('./greet2').greet;
-greet2();
+var greet5 = require('./greet5').greet;
+greet5();
 ```
 
-``` greet2.js
-module.exports.greet = function() {
-	console.log('Hello world!');
-};
+``` greet5.js
+var greeting = 'Hello world!!!!';
+
+function greet() {
+	console.log(greeting);
+}
+
+module.exports = {
+	greet: greet
+}
 ```
 
 
