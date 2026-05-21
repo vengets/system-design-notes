@@ -5,6 +5,10 @@
       "path": "02_Backend_Engineering/Nodejs.md"
     },
     {
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
       "basename": "Home",
       "path": "Home.md"
     },
@@ -99,10 +103,6 @@
     {
       "basename": "Redis",
       "path": "02_Backend_Engineering/Redis.md"
-    },
-    {
-      "basename": "README",
-      "path": "README.md"
     },
     {
       "basename": "Abstract Factory Pattern",

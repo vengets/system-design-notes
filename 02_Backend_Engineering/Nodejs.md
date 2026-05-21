@@ -22,6 +22,7 @@ url:
 
 ### Module.exports
 
+#### Type 1
 ``` fn_file.js
 var fn() {
 	print('hi');
@@ -33,6 +34,69 @@ module.exports = fn;
 var fn = require('fn_file');
 fn()
 ```
+
+#### Type 2
+```
+var greet2 = require('./greet2').greet;
+greet2();
+```
+
+``` greet2.js
+module.exports.greet = function() {
+	console.log('Hello world!');
+};
+```
+
+#### Type 3
+```
+var greet3 = require('./greet3');
+greet3.greet();
+greet3.greeting = 'Changed hello world!';
+```
+
+``` greet3.js
+function Greetr() {
+	this.greeting = 'Hello world!!';
+	this.greet = function() {
+		console.log(this.greeting);
+	}
+}
+
+module.exports = new Greetr();
+```
+
+#### Type 4
+```
+var Greet4 = require('./greet4');
+var grtr = new Greet4();
+grtr.greet();
+```
+
+``` greet4.js
+function Greetr() {
+	this.greeting = 'Hello world!!!';
+	this.greet = function() {
+		console.log(this.greeting);
+	}
+}
+
+module.exports = Greetr;
+```
+
+#### Type 5
+```
+var greet2 = require('./greet2').greet;
+greet2();
+```
+
+``` greet2.js
+module.exports.greet = function() {
+	console.log('Hello world!');
+};
+```
+
+
+
 
 ### Prototype
 
