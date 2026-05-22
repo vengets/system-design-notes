@@ -132,3 +132,10 @@ console.log(john.__proto__);
 console.log(jane.__proto__);
 console.log(john.__proto__ === jane.__proto__);
 ```
+
+
+## Event Loop
+
+### Initial phase
+
+ - Executes sequential code fully, ignoring and adding the callbacks to queue for later execution.

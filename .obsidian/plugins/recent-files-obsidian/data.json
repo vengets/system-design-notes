@@ -5,6 +5,10 @@
       "path": "02_Backend_Engineering/Nodejs.md"
     },
     {
+      "basename": "Behavioural Round",
+      "path": "08_Interview_Prep/Behavioural Round.md"
+    },
+    {
       "basename": "README",
       "path": "README.md"
     },
@@ -19,10 +23,6 @@
     {
       "basename": "Projects",
       "path": "08_Interview_Prep/Projects.md"
-    },
-    {
-      "basename": "Behavioural Round",
-      "path": "08_Interview_Prep/Behavioural Round.md"
     },
     {
       "basename": "Plan",
