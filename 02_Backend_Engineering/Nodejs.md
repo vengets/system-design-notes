@@ -140,4 +140,12 @@ console.log(john.__proto__ === jane.__proto__);
 
  - Executes sequential code fully, ignoring and adding the callbacks to queue for later execution.
 -  Loads Modules before sequential execution starts :)  Hence require() import() executes first before main module.
-- 
+
+### Main Module
+- Core sequential code execution happens in the main file
+
+### Timer
+- After initial phase, event main loop gets initialised.
+- First phase in the loop is timers
+- Done by LibUV library.
+- Timer callbacks get scheduled, sorted by duration (not accurate though!)
