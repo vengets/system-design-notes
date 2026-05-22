@@ -139,3 +139,5 @@ console.log(john.__proto__ === jane.__proto__);
 ### Initial phase
 
  - Executes sequential code fully, ignoring and adding the callbacks to queue for later execution.
+-  Loads Modules before sequential execution starts :)  Hence require() import() executes first before main module.
+- 
