@@ -27,3 +27,13 @@ url:
 	   }
   }
   ```
+
+### Access Modifier
+
+![[Pasted image 20260524134518.png]],
+#### Final modifier 
+- Immutability to a member variable
+- Immutability to class Ex: String, Integer are final classes. Their values cannot be changed once created.
+
+
+
