@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02_Backend_Engineering/Nodejs.md",
+                "file": "Home.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Nodejs"
+              "title": "Home"
             }
           }
         ]
@@ -233,8 +233,8 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "08_Interview_Prep/Behavioural Round.md",
     "02_Backend_Engineering/Nodejs.md",
+    "08_Interview_Prep/Behavioural Round.md",
     "README.md",
     "Home.md",
     "08_Interview_Prep/Questions.md",
