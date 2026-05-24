@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02_Backend_Engineering/Java.md",
+                "file": "Home.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Java"
+              "title": "Home"
             }
           }
         ]
@@ -233,9 +233,9 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "02_Backend_Engineering/Java.md",
     "99_Attachments/Pasted image 20260524134518.png",
     "Home.md",
-    "02_Backend_Engineering/Java.md",
     "02_Backend_Engineering/Nodejs.md",
     "08_Interview_Prep/Behavioural Round.md",
     "README.md",
@@ -263,7 +263,6 @@
     "Excalidraw/Scripts/Downloaded/Box Each Selected Groups.md",
     "Excalidraw/Scripts/Downloaded/Box Selected Elements.svg",
     "Excalidraw/Scripts/Downloaded/Box Selected Elements.md",
-    "Excalidraw/Scripts/Downloaded/Change shape of selected elements.svg",
     "Excalidraw/Scripts/Downloaded/Change shape of selected elements.md",
     "Excalidraw/Scripts/Downloaded/Connect elements.md",
     "Excalidraw/Scripts/Downloaded/Create DrawIO file.md",
