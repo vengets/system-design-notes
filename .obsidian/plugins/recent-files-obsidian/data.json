@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Java",
+      "path": "02_Backend_Engineering/Java.md"
+    },
+    {
       "basename": "Home",
       "path": "Home.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Command Pattern",
       "path": "01_System_Design/001_LLD/Command Pattern.md"
-    },
-    {
-      "basename": "Load Balancing",
-      "path": "01_System_Design/Load Balancing.md"
     }
   ],
   "omittedPaths": [],
