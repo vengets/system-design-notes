@@ -8,7 +8,26 @@ company:
 level:
 related:
 ---
+### Tell me about yourself
 
+I’m a Senior Software Engineer with 13+ years of experience building scalable backend and distributed systems across healthcare, fintech, e-commerce, blockchain, and enterprise platforms. My strongest areas are Java/Spring Boot, event-driven microservices, Kafka, cloud-native architecture on AWS, and designing resilient systems that can operate reliably at scale.
+
+Most recently at [Telstra Health](https://www.telstrahealth.com?utm_source=chatgpt.com), I worked on Australia’s National Cancer Screening Register platform, where I helped integrate lung cancer screening workflows into an existing large-scale healthcare ecosystem. That project naturally pushed us toward event-driven architecture because multiple systems needed to communicate asynchronously with reliability and auditability.
+
+For example, when a screening event occurred, different downstream systems had to react independently — notifications, eligibility checks, workflow orchestration, reporting, and external integrations. We used Kafka heavily for decoupling services and improving scalability. One challenge we faced was ensuring consistency between database transactions and event publishing, especially in healthcare where duplicate or missed events are unacceptable. To solve that, we implemented the outbox pattern so that DB commits and Kafka publishing remained reliable and recoverable.
+
+Another important aspect was idempotency. Since retries and redelivery are unavoidable in distributed systems, our APIs and consumers were designed to safely handle duplicate processing using idempotency keys and status tracking. We also built retry mechanisms with exponential backoff and jitter to prevent retry storms during downstream outages, and routed poison messages into DLQs for investigation instead of endlessly retrying.
+
+We also spent significant effort on observability — Kafka lag monitoring, distributed tracing, structured logs, dashboards, and alerting — because diagnosing issues in distributed asynchronous systems is very different from debugging monoliths.
+
+Before that, I worked across several other domains:
+
+- At [Samsung Electronics](https://www.samsung.com?utm_source=chatgpt.com), I worked on microservices using Java, Node.js, RabbitMQ, PostgreSQL, and AWS.
+- At [Zilingo](https://zilingo.com?utm_source=chatgpt.com), I worked on e-commerce backend systems using Scala/Java and Kafka, including order workflows and partial cancellation flows.
+- At [Webjet](https://www.webjet.com.au?utm_source=chatgpt.com), I worked in blockchain-related engineering.
+- Earlier at [dnata](https://www.dnata.com?utm_source=chatgpt.com), I built supplier integrations, APIs, and fraud-related modules.
+
+Over time, I naturally gravitated toward designing systems that are fault tolerant, observable, and operationally stable under real-world production conditions. I enjoy discussions around distributed systems tradeoffs — things like eventual consistency, ordering guarantees, retries, idempotency, DLQs, consumer scaling, and reliability patterns in event-driven systems — because those are the kinds of engineering problems I’ve been solving in production environments.
 
 ## Question
 

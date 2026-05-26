@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "08_Interview_Prep/tcs.md",
+                "file": "08_Interview_Prep/Questions.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "tcs"
+              "title": "Questions"
             }
           }
         ]
@@ -233,15 +233,15 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "Home.md",
+    "08_Interview_Prep/Projects.md",
     "08_Interview_Prep/tcs.md",
+    "Home.md",
     "02_Backend_Engineering/Java.md",
     "99_Attachments/Pasted image 20260524134518.png",
     "02_Backend_Engineering/Nodejs.md",
     "08_Interview_Prep/Behavioural Round.md",
     "README.md",
     "08_Interview_Prep/Questions.md",
-    "08_Interview_Prep/Projects.md",
     "08_Interview_Prep/salesforce/Plan.md",
     "02_Backend_Engineering/Telstra Health - STAR.md",
     "02_Backend_Engineering/SLA timeframe.md",

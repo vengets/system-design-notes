@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "Questions",
+      "path": "08_Interview_Prep/Questions.md"
+    },
+    {
+      "basename": "Projects",
+      "path": "08_Interview_Prep/Projects.md"
+    },
+    {
       "basename": "tcs",
       "path": "08_Interview_Prep/tcs.md"
     },
@@ -23,14 +31,6 @@
     {
       "basename": "README",
       "path": "README.md"
-    },
-    {
-      "basename": "Questions",
-      "path": "08_Interview_Prep/Questions.md"
-    },
-    {
-      "basename": "Projects",
-      "path": "08_Interview_Prep/Projects.md"
     },
     {
       "basename": "Plan",
