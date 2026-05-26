@@ -10,7 +10,9 @@ related:
 ---
 ### Tell me about yourself
 
-I’m a Senior Software Engineer with 13+ years of experience building scalable backend and distributed systems across healthcare, fintech, e-commerce, blockchain, and enterprise platforms. My strongest areas are Java/Spring Boot, event-driven microservices, Kafka, cloud-native architecture on AWS, and designing resilient systems that can operate reliably at scale.
+I’m a Senior Software Engineer with 13+ years of experience building scalable backend and distributed systems across healthcare, fintech, e-commerce, blockchain, and enterprise platforms. 
+I am a polyglot developer having solid experience in  Java/Spring Boot, Node (TS), Functional programming such as Scala, Frontend: react, SQL & NoSQL databases.
+Developed event-driven microservices with Kafka, rabbitmq, cloud-native architecture on AWS, and designing resilient systems that can operate reliably at scale.
 
 Most recently at [Telstra Health](https://www.telstrahealth.com?utm_source=chatgpt.com), I worked on Australia’s National Cancer Screening Register platform, where I helped integrate lung cancer screening workflows into an existing large-scale healthcare ecosystem. That project naturally pushed us toward event-driven architecture because multiple systems needed to communicate asynchronously with reliability and auditability.
 

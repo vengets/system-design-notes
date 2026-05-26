@@ -5,12 +5,24 @@
       "path": "08_Interview_Prep/Questions.md"
     },
     {
-      "basename": "Projects",
-      "path": "08_Interview_Prep/Projects.md"
+      "basename": "Canva Prep Plan",
+      "path": "08_Interview_Prep/Canva/Canva Prep Plan.md"
     },
     {
       "basename": "tcs",
       "path": "08_Interview_Prep/tcs.md"
+    },
+    {
+      "basename": "JD - Backend Engineer",
+      "path": "08_Interview_Prep/Canva/JD - Backend Engineer.md"
+    },
+    {
+      "basename": "Plan",
+      "path": "08_Interview_Prep/salesforce/Plan.md"
+    },
+    {
+      "basename": "Projects",
+      "path": "08_Interview_Prep/Projects.md"
     },
     {
       "basename": "Home",
@@ -31,10 +43,6 @@
     {
       "basename": "README",
       "path": "README.md"
-    },
-    {
-      "basename": "Plan",
-      "path": "08_Interview_Prep/salesforce/Plan.md"
     },
     {
       "basename": "Telstra Health - STAR",
@@ -71,14 +79,6 @@
     {
       "basename": "Notes - ChatGPT Prompt Engineering for Developers",
       "path": "12_AI_Engineering/03_Prompt_Engineering/Notes - ChatGPT Prompt Engineering for Developers.md"
-    },
-    {
-      "basename": "JD - Backend Engineer",
-      "path": "08_Interview_Prep/Canva/JD - Backend Engineer.md"
-    },
-    {
-      "basename": "Canva Prep Plan",
-      "path": "08_Interview_Prep/Canva/Canva Prep Plan.md"
     },
     {
       "basename": "GUIDE",
