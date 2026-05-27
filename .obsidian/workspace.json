@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "08_Interview_Prep/Questions.md",
+                "file": "Home.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Questions"
+              "title": "Home"
             }
           }
         ]
@@ -233,11 +233,11 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "08_Interview_Prep/Questions.md",
     "08_Interview_Prep/Canva/Canva Prep Plan.md",
     "08_Interview_Prep/tcs.md",
     "08_Interview_Prep/Canva/JD - Backend Engineer.md",
     "08_Interview_Prep/salesforce/Plan.md",
-    "08_Interview_Prep/Questions.md",
     "08_Interview_Prep/Projects.md",
     "Home.md",
     "02_Backend_Engineering/Java.md",
