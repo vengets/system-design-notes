@@ -35,5 +35,6 @@ url:
 - Immutability to a member variable
 - Immutability to class Ex: String, Integer are final classes. Their values cannot be changed once created.
 
+### Collections
 
-
+![[collections java.png]]
