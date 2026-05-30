@@ -60,6 +60,7 @@ class Person implements Comparable<Person> {
    return 0;
   }
 }
+```
 
 You can use
 
@@ -82,4 +83,31 @@ public int compare(Person o1, Person o2){
 
 You can use
 ```
+Collections.sort(people, new NotInPersonClass());
+```
+or
+```
+people.sort(new NotInPersonClass());
+```
+or
+```
+people.sort(new Comparator<Person>() {  
+@Override  
+public int compare(Person p1, Person p2) {  
+return Integer.compare(p1.age, p2.age);  
+}  
+});
+```
+or Lambda (most common today)
+
+```
+people.sort((p1, p2) -> Integer.compare(p1.age, p2.age));
+```
+
+Or even shorter:
+
+```
+people.sort(Comparator.comparingInt(p -> p.age));
+```
+
 ```
