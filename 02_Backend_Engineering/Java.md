@@ -38,3 +38,13 @@ url:
 ### Collections
 
 ![[collections java.png|1339]]
+
+
+
+### Iterator 
+
+![[Screenshot 2026-05-30 at 5.19.13 PM.png|2106]]d
+
+#### ListIterator can go both directions where Iterator can only goes to next element.
+
+
