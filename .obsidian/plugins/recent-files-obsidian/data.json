@@ -5,6 +5,10 @@
       "path": "02_Backend_Engineering/Java.md"
     },
     {
+      "basename": "Nodejs",
+      "path": "02_Backend_Engineering/Nodejs.md"
+    },
+    {
       "basename": "Home",
       "path": "Home.md"
     },
@@ -31,10 +35,6 @@
     {
       "basename": "Projects",
       "path": "08_Interview_Prep/Projects.md"
-    },
-    {
-      "basename": "Nodejs",
-      "path": "02_Backend_Engineering/Nodejs.md"
     },
     {
       "basename": "Behavioural Round",

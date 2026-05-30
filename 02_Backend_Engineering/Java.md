@@ -50,8 +50,9 @@ url:
 
 ### Comparable<Integer> vs Comparator
 
-// Use Comparable if you have access to change the class
-```
+#### Use Comparable if you have access to change the class
+
+``` java
 class Person implements Comparable<Person> {
 
  @Override
@@ -59,15 +60,26 @@ class Person implements Comparable<Person> {
    return 0;
   }
 }
-```
 
-//Comparator outside of the Person class
+You can use
+
+```
+Collections.sort(persons);
+```
+---
+
+#### //Comparator outside of the Person class
+
 ```
 class NotInPersonClass implements Comparator<Person> {
 
 @Override
 public int compare(Person o1, Person o2){
   return 0;
+ }
 }
+```
 
-}
+You can use
+```
+```
