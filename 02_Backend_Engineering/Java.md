@@ -48,3 +48,26 @@ url:
 #### ListIterator can go both directions where Iterator can only goes to next element.
 
 
+### Comparable<Integer> vs Comparator
+
+// Use Comparable if you have access to change the class
+```
+class Person implements Comparable<Person> {
+
+ @Override
+ public int compareTo(Person personTo) {
+   return 0;
+  }
+}
+```
+
+//Comparator outside of the Person class
+```
+class NotInPersonClass implements Comparator<Person> {
+
+@Override
+public int compare(Person o1, Person o2){
+  return 0;
+}
+
+}
