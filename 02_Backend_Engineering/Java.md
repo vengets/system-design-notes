@@ -37,4 +37,4 @@ url:
 
 ### Collections
 
-![[collections java.png]]
+![[collections java.png|1339]]
