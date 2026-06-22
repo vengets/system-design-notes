@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Scale EC2 Servers",
+      "path": "06_AWS/Scale EC2 Servers.md"
+    },
+    {
       "basename": "Home",
       "path": "Home.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Prototype Pattern",
       "path": "01_System_Design/001_LLD/Prototype Pattern.md"
-    },
-    {
-      "basename": "Iterator Pattern",
-      "path": "01_System_Design/001_LLD/Iterator Pattern.md"
     }
   ],
   "omittedPaths": [],
