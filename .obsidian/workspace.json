@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "06_AWS/Scale EC2 Servers.md",
+                "file": "06_AWS/EC2 instances are not evenly distributed.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Scale EC2 Servers"
+              "title": "EC2 instances are not evenly distributed"
             }
           }
         ]
@@ -233,8 +233,9 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "Home.md",
     "06_AWS/Scale EC2 Servers.md",
+    "06_AWS/EC2 instances are not evenly distributed.md",
+    "Home.md",
     "02_Backend_Engineering/Java.md",
     "02_Backend_Engineering/Nodejs.md",
     "99_Attachments/Screenshot 2026-05-30 at 5.19.13 PM.png",
@@ -268,7 +269,6 @@
     "Excalidraw/Scripts/Downloaded/Box Each Selected Groups.md",
     "Excalidraw/Scripts/Downloaded/Box Selected Elements.md",
     "Excalidraw/Scripts/Downloaded/Change shape of selected elements.md",
-    "Excalidraw/Scripts/Downloaded/Connect elements.md",
     "Excalidraw/Scripts/Downloaded",
     "Excalidraw/Scripts",
     "Excalidraw",

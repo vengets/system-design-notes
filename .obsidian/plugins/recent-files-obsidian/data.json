@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "EC2 instances are not evenly distributed",
+      "path": "06_AWS/EC2 instances are not evenly distributed.md"
+    },
+    {
       "basename": "Scale EC2 Servers",
       "path": "06_AWS/Scale EC2 Servers.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "UML Class Diagrams",
       "path": "01_System_Design/001_LLD/UML Class Diagrams.md"
-    },
-    {
-      "basename": "Prototype Pattern",
-      "path": "01_System_Design/001_LLD/Prototype Pattern.md"
     }
   ],
   "omittedPaths": [],
