@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "08_Interview_Prep/DS/DS AlGOS PLAN.md",
+                "file": "07_Kubernetes/Creating Pods.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "DS AlGOS PLAN"
+              "title": "Creating Pods"
             }
           }
         ]
@@ -233,8 +233,9 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "90_Templates/Interview Question Template.md",
     "08_Interview_Prep/DS/DS AlGOS PLAN.md",
+    "07_Kubernetes/Creating Pods.md",
+    "90_Templates/Interview Question Template.md",
     "06_AWS/Scale EC2 Servers.md",
     "08_Interview_Prep/DS",
     "06_AWS/EC2 instances are not evenly distributed across AZ.md",
@@ -269,7 +270,6 @@
     "Excalidraw/Scripts/Downloaded/Auto Layout.svg",
     "Excalidraw/Scripts/Downloaded/Auto Layout.md",
     "Excalidraw/Scripts/Downloaded/Boolean Operations.md",
-    "Excalidraw/Scripts/Downloaded/Box Each Selected Groups.md",
     "Excalidraw/Scripts/Downloaded",
     "Excalidraw/Scripts",
     "Excalidraw",

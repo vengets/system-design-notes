@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Creating Pods",
+      "path": "07_Kubernetes/Creating Pods.md"
+    },
+    {
       "basename": "DS AlGOS PLAN",
       "path": "08_Interview_Prep/DS/DS AlGOS PLAN.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Factory Pattern",
       "path": "01_System_Design/001_LLD/Factory Pattern.md"
-    },
-    {
-      "basename": "OOP Principles",
-      "path": "01_System_Design/001_LLD/OOP Principles.md"
     }
   ],
   "omittedPaths": [],
