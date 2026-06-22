@@ -15,6 +15,10 @@ related:
 
 ## When a Load balancer splits the request across multiple AZ, still some EC2 are busy, some are less occupied. 
 
+- Solution: 
+	- Enable Cross-zone Load balancing
+
+
 
 
 
