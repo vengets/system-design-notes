@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Creating keypair",
+      "path": "06_AWS/Terraform/Creating keypair.md"
+    },
+    {
       "basename": "Creating Pods",
       "path": "07_Kubernetes/Creating Pods.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Chain of Responsibility Pattern",
       "path": "01_System_Design/001_LLD/Chain of Responsibility Pattern.md"
-    },
-    {
-      "basename": "Factory Pattern",
-      "path": "01_System_Design/001_LLD/Factory Pattern.md"
     }
   ],
   "omittedPaths": [],
