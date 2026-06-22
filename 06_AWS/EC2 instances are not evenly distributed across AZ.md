@@ -4,7 +4,7 @@ updated:
 tags:
   - aws
 status: active
-service-category:
+service-category: EC2
 source:
 related:
 ---
@@ -20,7 +20,7 @@ related:
 
 
 
-
+![[Pasted image 20260622120349.png|1175]]
 
 
 ## Mental Model

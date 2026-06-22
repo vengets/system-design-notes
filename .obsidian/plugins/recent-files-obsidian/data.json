@@ -1,12 +1,12 @@
 {
   "recentFiles": [
     {
-      "basename": "EC2 instances are not evenly distributed",
-      "path": "06_AWS/EC2 instances are not evenly distributed.md"
-    },
-    {
       "basename": "Scale EC2 Servers",
       "path": "06_AWS/Scale EC2 Servers.md"
+    },
+    {
+      "basename": "EC2 instances are not evenly distributed across AZ",
+      "path": "06_AWS/EC2 instances are not evenly distributed across AZ.md"
     },
     {
       "basename": "Home",
