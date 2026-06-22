@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "DS AlGOS PLAN",
+      "path": "08_Interview_Prep/DS/DS AlGOS PLAN.md"
+    },
+    {
+      "basename": "Interview Question Template",
+      "path": "90_Templates/Interview Question Template.md"
+    },
+    {
       "basename": "Scale EC2 Servers",
       "path": "06_AWS/Scale EC2 Servers.md"
     },
@@ -165,10 +173,6 @@
       "path": "90_Templates/Kafka Event-Driven Template.md"
     },
     {
-      "basename": "Interview Question Template",
-      "path": "90_Templates/Interview Question Template.md"
-    },
-    {
       "basename": "Database Concept Template",
       "path": "90_Templates/Database Concept Template.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "OOP Principles",
       "path": "01_System_Design/001_LLD/OOP Principles.md"
-    },
-    {
-      "basename": "UML Class Diagrams",
-      "path": "01_System_Design/001_LLD/UML Class Diagrams.md"
     }
   ],
   "omittedPaths": [],

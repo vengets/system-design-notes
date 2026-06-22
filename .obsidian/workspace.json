@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "06_AWS/Scale EC2 Servers.md",
+                "file": "08_Interview_Prep/DS/DS AlGOS PLAN.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Scale EC2 Servers"
+              "title": "DS AlGOS PLAN"
             }
           }
         ]
@@ -233,9 +233,12 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "90_Templates/Interview Question Template.md",
+    "08_Interview_Prep/DS/DS AlGOS PLAN.md",
+    "06_AWS/Scale EC2 Servers.md",
+    "08_Interview_Prep/DS",
     "06_AWS/EC2 instances are not evenly distributed across AZ.md",
     "99_Attachments/Pasted image 20260622120349.png",
-    "06_AWS/Scale EC2 Servers.md",
     "Home.md",
     "02_Backend_Engineering/Java.md",
     "02_Backend_Engineering/Nodejs.md",
@@ -267,7 +270,6 @@
     "Excalidraw/Scripts/Downloaded/Auto Layout.md",
     "Excalidraw/Scripts/Downloaded/Boolean Operations.md",
     "Excalidraw/Scripts/Downloaded/Box Each Selected Groups.md",
-    "Excalidraw/Scripts/Downloaded/Box Selected Elements.md",
     "Excalidraw/Scripts/Downloaded",
     "Excalidraw/Scripts",
     "Excalidraw",
@@ -276,7 +278,6 @@
     "Documents/Insta360",
     "Documents/tickets/ilakiya Aug 2022 To Melb.pdf",
     "Documents/tickets",
-    "Documents/Geekdom template logo.key",
-    "Documents/Photo Booth Library/Contents/PkgInfo"
+    "Documents/Geekdom template logo.key"
   ]
 }
