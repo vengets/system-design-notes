@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02_Backend_Engineering/Java.md",
-                "mode": "preview",
+                "file": "Home.md",
+                "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Java"
+              "title": "Home"
             }
           }
         ]
@@ -233,8 +233,8 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "02_Backend_Engineering/Nodejs.md",
     "02_Backend_Engineering/Java.md",
+    "02_Backend_Engineering/Nodejs.md",
     "99_Attachments/Screenshot 2026-05-30 at 5.19.13 PM.png",
     "Home.md",
     "08_Interview_Prep/Questions.md",
