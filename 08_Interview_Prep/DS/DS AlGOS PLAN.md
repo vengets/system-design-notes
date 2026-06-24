@@ -45,7 +45,7 @@ Rules:
 
 ### Problems
 
-- [ ] 200 Number of Islands (Medium)
+- [x] 200 Number of Islands (Medium) ✅ 2026-06-25
 - [ ] 133 Clone Graph (Medium)
 - [ ] 994 Rotting Oranges (Medium)
 - [ ] 733 Flood Fill (Easy)
