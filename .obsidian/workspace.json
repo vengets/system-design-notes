@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "08_Interview_Prep/DS/DS AlGOS PLAN.md",
+                "file": "Home.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "DS AlGOS PLAN"
+              "title": "Home"
             }
           }
         ]
@@ -233,11 +233,11 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "08_Interview_Prep/DS/DS AlGOS PLAN.md",
     "Home.md",
     "06_AWS/Terraform/Creating keypair.md",
     "07_Kubernetes/Creating Pods.md",
     "06_AWS/Terraform",
-    "08_Interview_Prep/DS/DS AlGOS PLAN.md",
     "90_Templates/Interview Question Template.md",
     "06_AWS/Scale EC2 Servers.md",
     "08_Interview_Prep/DS",
