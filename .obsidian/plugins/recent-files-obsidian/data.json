@@ -5,6 +5,10 @@
       "path": "Home.md"
     },
     {
+      "basename": "Behavioural Round",
+      "path": "08_Interview_Prep/Behavioural Round.md"
+    },
+    {
       "basename": "DS AlGOS PLAN",
       "path": "08_Interview_Prep/DS/DS AlGOS PLAN.md"
     },
@@ -59,10 +63,6 @@
     {
       "basename": "Projects",
       "path": "08_Interview_Prep/Projects.md"
-    },
-    {
-      "basename": "Behavioural Round",
-      "path": "08_Interview_Prep/Behavioural Round.md"
     },
     {
       "basename": "README",
